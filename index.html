@@ -1,1198 +1,404 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta content="#17635f" name="theme-color"/>
-  <meta content="noindex,nofollow" name="robots"/>
-  <title>
-   Жить легче. Двигаться свободно. | Neurolab Plus
-  </title>
-  <meta content="Neurolab Plus: первая консультация, неврология, диагностика и восстановление." name="description"/>
-  <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-  <link href="/styles.css" rel="stylesheet"/>
-  <link href="/art-direction.css" rel="stylesheet"/>
-  <script defer="" src="/site-config.js">
-  </script>
-  <script defer="" src="/app.js">
-  </script>
-  <script defer="" src="/hero-media.js">
-  </script>
- </head>
- <body class="home-page">
-  <a class="skip-link" href="#main">
-   Перейти к содержанию
-  </a>
-  <header class="header wrap">
-   <a aria-label="Neurolab Plus, главная" class="logo" href="/">
-    <span aria-hidden="true" class="brand-mark">
-     <i>
-     </i>
-     <i>
-     </i>
-     <i>
-     </i>
-     <i>
-     </i>
-    </span>
-    <span>
-     neurolab
-     <span class="logo-plus">
-      +
-     </span>
-     <small>
-      МЕДИЦИНСКАЯ КЛИНИКА
-     </small>
-    </span>
-   </a>
-   <nav aria-label="Основная навигация" class="desktop-nav">
-    <a aria-current="page" href="/">
-     Главная
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c3f40">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Neurolab Plus — неврология, диагностика и реабилитация</title>
+  <meta name="description" content="Neurolab Plus: приём невролога, МРТ, ЛФК и реабилитация. Первая консультация 5 000 ₸.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero-film-poster.webp" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="art-direction.css">
+  <script defer src="site-config.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="hero-media.js"></script>
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="header">
+    <a class="logo" href="./" aria-label="Neurolab Plus, главная">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>neurolab<span class="logo-plus">+</span><small>медицинская клиника</small></span>
     </a>
-    <a href="/services/">
-     Услуги
-    </a>
-    <a href="/#doctors">
-     Врачи
-    </a>
-    <a href="/#clinic">
-     О клинике
-    </a>
-    <a href="/#contacts">
-     Контакты
-    </a>
-   </nav>
-   <div class="header-actions">
-    <button class="btn btn-primary" data-book="">
-     Записаться
-     <span class="button-icon">
-      <span aria-hidden="true" class="arrow">
-       ↗
-      </span>
-     </span>
-    </button>
-    <button aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle icon-button">
-     <span aria-hidden="true" class="arrow">
-      Меню
-     </span>
-    </button>
-   </div>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="./" aria-current="page">Главная</a>
+      <a href="services/">Услуги</a>
+      <a href="#doctors">Врачи</a>
+      <a href="#clinic">О клинике</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn btn-primary" data-book="">Записаться</button>
+      <button class="menu-toggle" aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню">Меню</button>
+    </div>
   </header>
-  <nav aria-label="Мобильная навигация" class="mobile-nav" hidden="" id="mobile-nav">
-   <a href="/">
-    Главная
-   </a>
-   <a href="/services/">
-    Услуги
-   </a>
-   <a href="/#doctors">
-    Врачи
-   </a>
-   <a href="/#clinic">
-    О клинике
-   </a>
-   <a href="/#contacts">
-    Контакты
-   </a>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" hidden>
+    <a href="./">Главная</a>
+    <a href="services/">Услуги</a>
+    <a href="#doctors">Врачи</a>
+    <a href="#clinic">О клинике</a>
+    <a href="#contacts">Контакты</a>
   </nav>
+
   <main id="main">
-   <section class="film-hero">
-    <div class="film-media">
-     <picture>
-      <source media="(max-width: 650px)" srcset="/assets/hero-mobile-poster.webp"/>
-      <img alt="Иллюстрация: врач слушает пациентку" class="film-poster" fetchpriority="high" height="941" src="/assets/hero-film-poster.webp" width="1672"/>
-     </picture>
-     <video aria-hidden="true" id="hero-video" loop="" muted="" playsinline="" preload="none" tabindex="-1">
-     </video>
-    </div>
-    <div class="film-copy">
-     <span class="eyebrow">
-      НЕВРОЛОГИЯ · ДИАГНОСТИКА · ВОССТАНОВЛЕНИЕ
-     </span>
-     <h1>
-      Жить легче.
-      <br/>
-      Двигаться
-      <br/>
-      <span>
-       свободно.
-      </span>
-     </h1>
-     <p class="hero-lede">
-      Внимание к человеку.
-      <br/>
-      Забота о движении.
-     </p>
-     <div class="hero-actions">
-      <button class="btn btn-lilac" data-book="">
-       Записаться
-       <span aria-hidden="true" class="arrow">
-        ↗
-       </span>
-      </button>
-      <a class="hero-secondary" href="/services/">
-       Выбрать услугу
-      </a>
-     </div>
-    </div>
-    <div class="film-bottom">
-     <button class="film-price" data-book="Первая консультация">
-      <span>
-       Первая консультация
-       <strong>
-        5 000
-        <small>
-         ₸
-        </small>
-       </strong>
-      </span>
-      <span aria-hidden="true" class="arrow">
-       ↗
-      </span>
-     </button>
-    </div>
-    <div class="film-caption">
-     <span id="hero-media-caption">
-      Иллюстрация. Видео клиники появится здесь.
-     </span>
-     <button aria-label="Включить видео" class="film-toggle" hidden="" id="hero-video-toggle">
-      Включить видео
-      <span aria-hidden="true">
-       ▷
-      </span>
-     </button>
-    </div>
-   </section>
-   <div class="hero-values wrap">
-    <p>
-     Помощь начинается
-     <br/>
-     с внимания.
-    </p>
-    <span>
-     Консультация
-    </span>
-    <span>
-     Диагностика
-    </span>
-    <span>
-     Восстановление
-    </span>
-    <a href="#consultation">
-     Как проходит первый приём
-     <span aria-hidden="true" class="arrow">
-      ↗
-     </span>
-    </a>
-   </div>
-   <section class="consultation section wrap" id="consultation">
-    <div class="section-heading">
-     <h2>
-      Хорошая помощь
-      <br/>
-      начинается
-      <span class="muted">
-       с разговора.
-      </span>
-     </h2>
-     <p>
-      Расскажите, что мешает жить привычно.
-      <br/>
-      На первом приёме врач выслушает вас,
-      <br/>
-      проведёт осмотр и объяснит следующий шаг.
-     </p>
-    </div>
-    <div class="consultation-editorial">
-     <figure class="consultation-photo">
-      <img alt="Иллюстрация: врач внимательно беседует с пациенткой" height="800" loading="lazy" src="/assets/consultation.webp" width="1200"/>
-      <figcaption>
-       Есть время поговорить. И есть кому услышать.
-      </figcaption>
-     </figure>
-     <div class="consultation-aside">
-      <span class="editorial-label">
-       ПЕРВАЯ КОНСУЛЬТАЦИЯ
-      </span>
-      <strong class="editorial-price">
-       5 000
-       <span>
-        ₸
-       </span>
-      </strong>
-      <p>
-       Четыре понятных результата
-       <br/>
-       одного визита.
-      </p>
-      <button class="btn btn-primary" data-book="Первая консультация">
-       Записаться
-       <span class="button-icon">
-        <span aria-hidden="true" class="arrow">
-         ↗
-        </span>
-       </span>
-      </button>
-      <p class="micro">
-       [НУЖНО: врач и условия цены].
-       <br/>
-       Инструментальная диагностика уточняется отдельно.
-      </p>
-     </div>
-    </div>
-    <ol class="visit-outcomes">
-     <li>
-      <span>
-       01
-      </span>
-      <h3>
-       Вас выслушают
-      </h3>
-      <p>
-       Жалобы, история здоровья и вопросы, которые давно хотелось задать.
-      </p>
-     </li>
-     <li>
-      <span>
-       02
-      </span>
-      <h3>
-       Проведут осмотр
-      </h3>
-      <p>
-       Врач оценит состояние во время консультации.
-      </p>
-     </li>
-     <li>
-      <span>
-       03
-      </span>
-      <h3>
-       Объяснят рекомендации
-      </h3>
-      <p>
-       Что можно сделать сейчас и какие обследования могут понадобиться.
-      </p>
-     </li>
-     <li>
-      <span>
-       04
-      </span>
-      <h3>
-       Наметят план помощи
-      </h3>
-      <p>
-       Обсудят дальнейшую диагностику и возможное лечение.
-      </p>
-     </li>
-    </ol>
-    <div class="procedure-strip">
-     <span class="procedure-number">
-      +2
-     </span>
-     <strong>
-      Процедуры после приёма.
-      <br/>
-      <span>
-       Без дополнительной оплаты.
-      </span>
-     </strong>
-     <p>
-      Подбираются индивидуально по показаниям.
-      <br/>
-      [НУЖНО: перечень и условия предложения]
-     </p>
-     <button class="text-link" data-info="procedures">
-      Условия
-      <span aria-hidden="true" class="arrow">
-       ↗
-      </span>
-     </button>
-    </div>
-   </section>
-   <section aria-labelledby="documents-heading" class="license-section wrap" id="clinic">
-    <div class="document-heading">
-     <span class="editorial-label">
-      КЛИНИКА / ДОКУМЕНТЫ
-     </span>
-     <h2 id="documents-heading">
-      Доверие начинается
-      <br/>
-      с открытости.
-     </h2>
-     <p>
-      Документы клиники в одном месте.
-      <br/>
-      Выберите раздел, чтобы узнать подробности.
-     </p>
-    </div>
-    <div class="document-desk">
-     <div aria-label="Документы клиники" aria-orientation="vertical" class="document-index" role="tablist">
-      <button aria-controls="document-license" aria-selected="true" id="doc-license" role="tab">
-       <span class="index-number">
-        01
-       </span>
-       <span>
-        <strong>
-         Медицинская
-         <br/>
-         лицензия
-        </strong>
-        <small>
-         Право на медицинскую деятельность
-        </small>
-       </span>
-       <span aria-hidden="true" class="index-state">
-        ↗
-       </span>
-      </button>
-      <button aria-controls="document-certificates" aria-selected="false" id="doc-certificates" role="tab" tabindex="-1">
-       <span class="index-number">
-        02
-       </span>
-       <span>
-        <strong>
-         Сертификаты
-         <br/>
-         специалистов
-        </strong>
-        <small>
-         Образование и квалификация
-        </small>
-       </span>
-       <span aria-hidden="true" class="index-state">
-        ↗
-       </span>
-      </button>
-      <button aria-controls="document-equipment" aria-selected="false" id="doc-equipment" role="tab" tabindex="-1">
-       <span class="index-number">
-        03
-       </span>
-       <span>
-        <strong>
-         Документы
-         <br/>
-         на оборудование
-        </strong>
-        <small>
-         Регистрационные документы
-        </small>
-       </span>
-       <span aria-hidden="true" class="index-state">
-        ↗
-       </span>
-      </button>
-     </div>
-     <div class="document-viewer">
-      <section aria-labelledby="doc-license" class="document-sheet" id="document-license" role="tabpanel" tabindex="0">
-       <div class="sheet-top">
-        <span>
-         NEUROLAB +
-        </span>
-        <span>
-         ЛИЦЕНЗИЯ
-        </span>
-       </div>
-       <div class="sheet-title">
-        <span aria-hidden="true" class="sheet-mark">
-         +
-        </span>
-        <h3>
-         Медицинская
-         <br/>
-         лицензия
-        </h3>
-        <p>
-         Официальный документ о праве
-         <br/>
-         на медицинскую деятельность.
-        </p>
-       </div>
-       <dl>
+    <!-- Hero: видео на весь экран. Сейчас стоит заглушка assets/hero-placeholder.mp4, путь меняется в site-config.js -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <picture>
+          <source media="(max-width: 650px)" srcset="assets/hero-mobile-poster.webp">
+          <img class="hero-poster" src="assets/hero-film-poster.webp" alt="" width="1672" height="941" fetchpriority="high">
+        </picture>
+        <video id="hero-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 id="hero-title">Поможем справиться с болью и вернуться к движению</h1>
+          <p class="hero-lede">Приём невролога, МРТ и реабилитация в одной клинике. Врач разберётся в причине и составит понятный план лечения.</p>
+          <div class="hero-actions">
+            <button class="btn btn-lilac" data-book="">Записаться на приём</button>
+            <a class="btn btn-glass" href="services/">Все услуги</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <button class="hero-offer" data-book="Первая консультация">
+            <span class="hero-offer-title">Первая консультация невролога</span>
+            <strong>5 000 ₸</strong>
+            <span class="hero-offer-note">и две процедуры после приёма без доплаты</span>
+          </button>
+          <button class="hero-video-toggle" id="hero-video-toggle" aria-label="Приостановить видео" hidden>
+            <span aria-hidden="true" class="toggle-icon"></span>
+            <span class="toggle-text">Пауза</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Первый приём -->
+    <section class="visit section wrap" id="consultation" aria-labelledby="visit-title">
+      <div class="section-heading">
+        <h2 id="visit-title">Как проходит первый приём</h2>
+        <p>Расскажите, что беспокоит. Врач выслушает, проведёт осмотр и объяснит, что делать дальше. Готовое МРТ для записи не нужно.</p>
+      </div>
+
+      <div class="visit-bento">
+        <figure class="visit-photo consultation-photo">
+          <img src="assets/consultation.webp" alt="Иллюстрация: врач беседует с пациенткой" width="1200" height="800" loading="lazy">
+        </figure>
+
+        <div class="visit-price">
+          <span class="visit-price-title">Консультация невролога</span>
+          <strong>5 000 <span>₸</span></strong>
+          <p>Стоимость первого приёма. Инструментальная диагностика оплачивается отдельно. <span class="todo">[НУЖНО: условия цены]</span></p>
+          <button class="btn btn-primary" data-book="Первая консультация">Записаться</button>
+        </div>
+
+        <div class="visit-bonus">
+          <span class="bonus-mark" aria-hidden="true">+2</span>
+          <div>
+            <h3>Две процедуры после приёма без доплаты</h3>
+            <p>Врач подберёт их по вашим показаниям.</p>
+            <button class="text-link" data-info="procedures">Условия акции <span class="arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+
+        <ol class="visit-steps-list">
+          <li>
+            <h3>Разговор</h3>
+            <p>Жалобы, история здоровья и вопросы, которые давно хотелось задать.</p>
+          </li>
+          <li>
+            <h3>Осмотр</h3>
+            <p>Врач оценивает состояние прямо на консультации.</p>
+          </li>
+          <li>
+            <h3>Рекомендации</h3>
+            <p>Что можно сделать сейчас и какие обследования могут понадобиться.</p>
+          </li>
+          <li>
+            <h3>План лечения</h3>
+            <p>Дальнейшая диагностика и лечение, расписанные по шагам.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Направления: мозаика вместо ряда карточек -->
+    <section class="directions" id="directions" aria-labelledby="directions-title">
+      <div class="wrap">
+        <div class="directions-head">
+          <h2 id="directions-title">Направления</h2>
+          <p>Начните с консультации невролога или сразу запишитесь на исследование и занятия.</p>
+        </div>
+
+        <div class="mosaic">
+          <article class="tile tile-neuro">
+            <div class="tile-neuro-photo" aria-hidden="true">
+              <img src="assets/doctor.webp" alt="" width="850" height="1275" loading="lazy">
+            </div>
+            <div class="tile-body">
+              <span class="tile-tag">Консультации</span>
+              <h3>Неврология</h3>
+              <p>Головная боль, боль в спине и шее, головокружение, онемение рук и ног.</p>
+              <div class="tile-actions">
+                <button class="btn btn-primary" data-book="Неврология">Записаться</button>
+                <a class="text-link" href="services/neurology/">Подробнее <span class="arrow" aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile tile-photo tile-mri">
+            <img src="assets/diagnostics.webp" alt="" width="1400" height="933" loading="lazy">
+            <div class="tile-body">
+              <span class="tile-tag">Диагностика</span>
+              <h3>МРТ</h3>
+              <p>Магнитно-резонансная томография.</p>
+              <div class="tile-actions">
+                <button class="btn btn-lilac" data-book="МРТ">Записаться</button>
+                <button class="text-link" data-service-detail="МРТ">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile tile-lfk">
+            <div class="tile-body">
+              <span class="tile-tag">Восстановление</span>
+              <h3>ЛФК</h3>
+              <p>Занятия лечебной физкультурой с инструктором.</p>
+              <div class="tile-actions">
+                <button class="text-link" data-service-detail="ЛФК">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile tile-photo tile-rehab">
+            <img src="assets/rehab.webp" alt="" width="1400" height="933" loading="lazy">
+            <div class="tile-body">
+              <span class="tile-tag">Восстановление</span>
+              <h3>Реабилитация</h3>
+              <div class="tile-actions">
+                <button class="text-link" data-service-detail="Реабилитация">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <a class="tile tile-more" href="services/">
+            <span class="tile-more-title">Ещё в клинике</span>
+            <span class="chips"><span>КТ</span><span>УЗИ</span><span>Иглотерапия</span></span>
+            <span class="tile-more-link">Все услуги и цены <span class="arrow" aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Врачи -->
+    <section class="team section wrap" id="doctors" aria-labelledby="team-title">
+      <div class="team-head">
         <div>
-         <dt>
-          Номер и дата
-         </dt>
-         <dd>
-          Ожидаем данные клиники
-         </dd>
+          <h2 id="team-title">Врачи клиники</h2>
+          <p>Сейчас здесь иллюстрации. Скоро добавим фотографии, имена и опыт специалистов.</p>
         </div>
-        <div>
-         <dt>
-          Оригинал документа
-         </dt>
-         <dd>
-          Ещё не добавлен
-         </dd>
+        <div class="segmented" role="tablist" aria-label="Команда и партнёры">
+          <button role="tab" id="doctor-neuro-tab" aria-controls="doctor-neuro" aria-selected="true">Неврология</button>
+          <button role="tab" id="doctor-rehab-tab" aria-controls="doctor-rehab" aria-selected="false" tabindex="-1">Восстановление</button>
+          <button role="tab" id="partners-tab" aria-controls="partners-panel" aria-selected="false" tabindex="-1">Партнёры</button>
         </div>
-       </dl>
-       <p class="sheet-note">
-        После добавления оригинала здесь можно будет открыть и скачать документ.
-       </p>
-      </section>
-      <section aria-labelledby="doc-certificates" class="document-sheet" hidden="" id="document-certificates" role="tabpanel" tabindex="0">
-       <div class="sheet-top">
-        <span>
-         NEUROLAB +
-        </span>
-        <span>
-         КВАЛИФИКАЦИЯ
-        </span>
-       </div>
-       <div class="sheet-title">
-        <span aria-hidden="true" class="sheet-mark">
-         +
-        </span>
-        <h3>
-         Сертификаты
-         <br/>
-         специалистов
-        </h3>
-        <p>
-         Образование, специализация
-         <br/>
-         и профессиональная подготовка.
-        </p>
-       </div>
-       <dl>
-        <div>
-         <dt>
-          Специалисты
-         </dt>
-         <dd>
-          Список уточняется
-         </dd>
-        </div>
-        <div>
-         <dt>
-          Оригиналы документов
-         </dt>
-         <dd>
-          Ещё не добавлены
-         </dd>
-        </div>
-       </dl>
-       <p class="sheet-note">
-        Подтверждённые сертификаты появятся здесь вместе с данными специалистов.
-       </p>
-      </section>
-      <section aria-labelledby="doc-equipment" class="document-sheet" hidden="" id="document-equipment" role="tabpanel" tabindex="0">
-       <div class="sheet-top">
-        <span>
-         NEUROLAB +
-        </span>
-        <span>
-         ОБОРУДОВАНИЕ
-        </span>
-       </div>
-       <div class="sheet-title">
-        <span aria-hidden="true" class="sheet-mark">
-         +
-        </span>
-        <h3>
-         Документы
-         <br/>
-         на оборудование
-        </h3>
-        <p>
-         Документация к диагностическому
-         <br/>
-         и медицинскому оборудованию.
-        </p>
-       </div>
-       <dl>
-        <div>
-         <dt>
-          Перечень оборудования
-         </dt>
-         <dd>
-          Ожидаем подтверждение
-         </dd>
-        </div>
-        <div>
-         <dt>
-          Оригиналы документов
-         </dt>
-         <dd>
-          Ещё не добавлены
-         </dd>
-        </div>
-       </dl>
-       <p class="sheet-note">
-        Документы будут сгруппированы по оборудованию и методам исследования.
-       </p>
-      </section>
-      <p class="document-disclosure">
-       Оригиналы пока не предоставлены. Образцы документов не используются.
-      </p>
-     </div>
-    </div>
-   </section>
-   <section aria-labelledby="team-heading" class="doctors-section section wrap" id="doctors">
-    <div class="team-heading">
-     <h2 id="team-heading">
-      Сначала человек.
-      <br/>
-      <span class="muted">
-       Потом всё остальное.
-      </span>
-     </h2>
-     <p>
-      За каждым планом помощи стоит врач.
-      <br/>
-      Здесь вы сможете познакомиться с командой.
-     </p>
-    </div>
-    <div class="team-layout">
-     <div class="team-index">
-      <p class="editorial-label">
-       ВЫБЕРИТЕ НАПРАВЛЕНИЕ
-      </p>
-      <div aria-label="Команда и партнёры" aria-orientation="vertical" class="team-tabs" role="tablist">
-       <button aria-controls="doctor-neuro" aria-selected="true" id="doctor-neuro-tab" role="tab">
-        <span>
-         Неврология
-        </span>
-        <span aria-hidden="true">
-         01
-        </span>
-       </button>
-       <button aria-controls="doctor-rehab" aria-selected="false" id="doctor-rehab-tab" role="tab" tabindex="-1">
-        <span>
-         Восстановление
-        </span>
-        <span aria-hidden="true">
-         02
-        </span>
-       </button>
-       <button aria-controls="partners-panel" aria-selected="false" id="partners-tab" role="tab" tabindex="-1">
-        <span>
-         Партнёры
-        </span>
-        <span aria-hidden="true">
-         03
-        </span>
-       </button>
       </div>
-      <p class="team-disclosure">
-       Знакомство с командой начнётся здесь. Сейчас в макете используются иллюстрации, данные специалистов уточняются.
-      </p>
-     </div>
-     <div class="team-stage">
-      <article aria-labelledby="doctor-neuro-tab" class="doctor-profile" id="doctor-neuro" role="tabpanel" tabindex="0">
-       <figure class="profile-portrait">
-        <span aria-hidden="true" class="portrait-word">
-         Рядом.
-        </span>
-        <div class="portrait-image">
-         <img alt="Иллюстративный портрет, не фотография врача клиники" height="1275" loading="lazy" src="/assets/doctor.webp" width="850"/>
+
+      <article class="doctor-profile" id="doctor-neuro" role="tabpanel" aria-labelledby="doctor-neuro-tab" tabindex="0">
+        <figure class="profile-portrait">
+          <div class="portrait-image">
+            <img src="assets/doctor.webp" alt="Иллюстративный портрет, не фотография врача клиники" width="850" height="1275" loading="lazy">
+          </div>
+          <figcaption>Иллюстрация</figcaption>
+        </figure>
+        <div class="profile-copy">
+          <span class="label">Невролог</span>
+          <h3>Имя специалиста появится здесь</h3>
+          <p>Принимает пациентов с головной болью, болью в спине и шее, нарушениями сна и чувствительности.</p>
+          <dl class="profile-facts">
+            <div><dt>Опыт</dt><dd>Уточняется</dd></div>
+            <div><dt>Квалификация</dt><dd>Ожидаем подтверждение</dd></div>
+            <div><dt>График приёма</dt><dd>Уточняется</dd></div>
+          </dl>
+          <div class="profile-actions">
+            <button class="btn btn-primary" data-book="Неврология">Записаться к неврологу</button>
+            <button class="text-link" data-info="doctor">О специалисте <span class="arrow" aria-hidden="true">↗</span></button>
+          </div>
         </div>
-        <figcaption>
-         Иллюстративный портрет
-        </figcaption>
-       </figure>
-       <div class="profile-copy">
-        <span class="profile-specialty">
-         НЕВРОЛОГИЯ
-        </span>
-        <h3>
-         Врач, которому
-         <br/>
-         можно задать
-         <br/>
-         свой вопрос.
-        </h3>
-        <p class="profile-name">
-         Имя специалиста уточняется
-        </p>
-        <dl class="profile-facts">
-         <div>
-          <dt>
-           Специализация
-          </dt>
-          <dd>
-           Невролог
-          </dd>
-         </div>
-         <div>
-          <dt>
-           Стаж и квалификация
-          </dt>
-          <dd>
-           Ожидаем подтверждение
-          </dd>
-         </div>
-         <div>
-          <dt>
-           График приёма
-          </dt>
-          <dd>
-           Уточняется
-          </dd>
-         </div>
-        </dl>
-        <button class="text-link" data-info="doctor">
-         О специалисте
-         <span aria-hidden="true" class="arrow">
-          ↗
-         </span>
-        </button>
-        <button class="btn btn-primary" data-book="Неврология">
-         Записаться
-         <span aria-hidden="true" class="arrow">
-          ↗
-         </span>
-        </button>
-       </div>
       </article>
-      <article aria-labelledby="doctor-rehab-tab" class="doctor-profile" hidden="" id="doctor-rehab" role="tabpanel" tabindex="0">
-       <figure class="profile-portrait profile-photo">
-        <div class="portrait-image">
-         <img alt="Иллюстрация занятия по восстановлению, не фотография команды клиники" height="800" loading="lazy" src="/assets/rehab.webp" width="1200"/>
+
+      <article class="doctor-profile" id="doctor-rehab" role="tabpanel" aria-labelledby="doctor-rehab-tab" tabindex="0" hidden>
+        <figure class="profile-portrait profile-photo">
+          <div class="portrait-image">
+            <img src="assets/rehab.webp" alt="Иллюстрация занятия по восстановлению, не фотография команды клиники" width="1400" height="933" loading="lazy">
+          </div>
+          <figcaption>Иллюстрация</figcaption>
+        </figure>
+        <div class="profile-copy">
+          <span class="label">Реабилитолог</span>
+          <h3>Имя специалиста появится здесь</h3>
+          <p>Ведёт занятия ЛФК и программы восстановления после травм и обострений.</p>
+          <dl class="profile-facts">
+            <div><dt>Опыт</dt><dd>Уточняется</dd></div>
+            <div><dt>Квалификация</dt><dd>Ожидаем подтверждение</dd></div>
+            <div><dt>График приёма</dt><dd>Уточняется</dd></div>
+          </dl>
+          <div class="profile-actions">
+            <button class="btn btn-primary" data-book="Реабилитация">Записаться на реабилитацию</button>
+            <button class="text-link" data-info="doctor">О специалисте <span class="arrow" aria-hidden="true">↗</span></button>
+          </div>
         </div>
-        <figcaption>
-         Иллюстрация направления
-        </figcaption>
-       </figure>
-       <div class="profile-copy">
-        <span class="profile-specialty">
-         ВОССТАНОВЛЕНИЕ
-        </span>
-        <h3>
-         Вернуться
-         <br/>
-         к привычному
-         <br/>
-         движению.
-        </h3>
-        <p class="profile-name">
-         Имя специалиста уточняется
-        </p>
-        <dl class="profile-facts">
-         <div>
-          <dt>
-           Направление
-          </dt>
-          <dd>
-           Восстановление
-          </dd>
-         </div>
-         <div>
-          <dt>
-           Квалификация и стаж
-          </dt>
-          <dd>
-           Ожидаем подтверждение
-          </dd>
-         </div>
-         <div>
-          <dt>
-           График приёма
-          </dt>
-          <dd>
-           Уточняется
-          </dd>
-         </div>
-        </dl>
-        <button class="text-link" data-info="doctor">
-         О специалисте
-         <span aria-hidden="true" class="arrow">
-          ↗
-         </span>
-        </button>
-        <button class="btn btn-primary" data-book="Реабилитация">
-         Записаться
-         <span aria-hidden="true" class="arrow">
-          ↗
-         </span>
-        </button>
-       </div>
       </article>
-      <div aria-labelledby="partners-tab" class="partners-panel" hidden="" id="partners-panel" role="tabpanel" tabindex="0">
-       <h3>
-        Помощь в сотрудничестве.
-       </h3>
-       <article>
-        <h4>
-         Приходящие врачи
-        </h4>
-        <p>
-         Состав специалистов и график уточняются.
-        </p>
-       </article>
-       <article>
-        <h4>
-         Лаборатория
-        </h4>
-        <p>
-         Ожидаем подтверждённые данные партнёра.
-        </p>
-       </article>
-       <article>
-        <h4>
-         КЬЮ МЕД
-        </h4>
-        <p>
-         Сервисное обслуживание медоборудования.
-        </p>
-       </article>
-       <article>
-        <h4>
-         Аудиторские компании
-        </h4>
-        <p>
-         Список партнёров уточняется.
-        </p>
-       </article>
+
+      <div class="partners-panel" id="partners-panel" role="tabpanel" aria-labelledby="partners-tab" tabindex="0" hidden>
+        <article><h4>Приходящие врачи</h4><p>Состав специалистов и график уточняются.</p></article>
+        <article><h4>Лаборатория</h4><p>Ожидаем данные партнёра.</p></article>
+        <article><h4>КЬЮ МЕД</h4><p>Сервисное обслуживание медицинского оборудования.</p></article>
+        <article><h4>Аудиторские компании</h4><p>Список партнёров уточняется.</p></article>
       </div>
-     </div>
-    </div>
-   </section>
-   <section class="services-experience" id="directions">
-    <div class="wrap">
-     <div class="services-top">
-      <span class="eyebrow">
-       НАПРАВЛЕНИЯ ПОМОЩИ
-      </span>
-      <a class="text-link" href="/services/">
-       Все услуги
-       <span aria-hidden="true" class="arrow">
-        ↗
-       </span>
-      </a>
-     </div>
-     <div class="services-title">
-      <h2>
-       У каждого свой путь.
-       <br/>
-       Найдём
-       <span>
-        ваш.
-       </span>
-      </h2>
-      <p>
-       Консультация, диагностика, восстановление.
-       <br/>
-       Выберите, с чего хотите начать.
-      </p>
-     </div>
-     <div class="choice-rail">
-      <article class="choice-card chosen" data-service="Неврология">
-       <span class="service-index">
-        01
-       </span>
-       <h3>
-        Неврология
-       </h3>
-       <div class="service-description">
-        <span>
-         Консультации
-        </span>
-        <p>
-         Разобраться в том, что беспокоит.
-        </p>
-       </div>
-       <div class="service-actions">
-        <a class="text-link" href="/services/neurology/">
-         Подробнее
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </a>
-        <button aria-label="Выбрать направление: Неврология" aria-pressed="true" class="choice-select" data-select="Неврология">
-         <span class="select-label">
-          Выбрано
-         </span>
-         <span aria-hidden="true" class="select-mark">
-          −
-         </span>
-        </button>
-       </div>
-      </article>
-      <article class="choice-card" data-service="МРТ">
-       <span class="service-index">
-        02
-       </span>
-       <h3>
-        МРТ
-       </h3>
-       <div class="service-description">
-        <span>
-         Диагностика
-        </span>
-        <p>
-         Магнитно-резонансная томография.
-        </p>
-       </div>
-       <div class="service-actions">
-        <button class="text-link" data-service-detail="МРТ">
-         Подробнее
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </button>
-        <button aria-label="Выбрать направление: МРТ" aria-pressed="false" class="choice-select" data-select="МРТ">
-         <span class="select-label">
-          Выбрать
-         </span>
-         <span aria-hidden="true" class="select-mark">
-          +
-         </span>
-        </button>
-       </div>
-      </article>
-      <article class="choice-card" data-service="ЛФК">
-       <span class="service-index">
-        03
-       </span>
-       <h3>
-        ЛФК
-       </h3>
-       <div class="service-description">
-        <span>
-         Восстановление
-        </span>
-        <p>
-         Занятия лечебной физкультурой.
-        </p>
-       </div>
-       <div class="service-actions">
-        <button class="text-link" data-service-detail="ЛФК">
-         Подробнее
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </button>
-        <button aria-label="Выбрать направление: ЛФК" aria-pressed="false" class="choice-select" data-select="ЛФК">
-         <span class="select-label">
-          Выбрать
-         </span>
-         <span aria-hidden="true" class="select-mark">
-          +
-         </span>
-        </button>
-       </div>
-      </article>
-      <article class="choice-card" data-service="Реабилитация">
-       <span class="service-index">
-        04
-       </span>
-       <h3>
-        Реабилитация
-       </h3>
-       <div class="service-description">
-        <span>
-         Восстановление
-        </span>
-        <p>
-         Возвращение к привычному движению.
-        </p>
-       </div>
-       <div class="service-actions">
-        <button class="text-link" data-service-detail="Реабилитация">
-         Подробнее
-         <span aria-hidden="true">
-          ↗
-         </span>
-        </button>
-        <button aria-label="Выбрать направление: Реабилитация" aria-pressed="false" class="choice-select" data-select="Реабилитация">
-         <span class="select-label">
-          Выбрать
-         </span>
-         <span aria-hidden="true" class="select-mark">
-          +
-         </span>
-        </button>
-       </div>
-      </article>
-     </div>
-     <div class="pathway-summary">
-      <div>
-       <small>
-        ВАШ ПЕРВЫЙ ШАГ
-       </small>
-       <strong data-selected-text="">
-        Неврология
-       </strong>
+    </section>
+
+    <!-- Документы -->
+    <section class="docs wrap" id="clinic" aria-labelledby="documents-heading">
+      <div class="docs-head">
+        <h2 id="documents-heading">Лицензия и документы</h2>
+        <p>Лицензия клиники, сертификаты врачей и документы на оборудование. Выберите, что хотите посмотреть.</p>
       </div>
-      <p>
-       Выбранное направление
-       <br/>
-       уже добавлено в запрос.
-      </p>
-      <button class="btn btn-dark" data-book="selected">
-       Записаться
-       <span class="button-icon">
-        <span aria-hidden="true" class="arrow">
-         ↗
-        </span>
-       </span>
-      </button>
-     </div>
-     <div class="services-footnote">
-      <span>
-       Также в каталоге: КТ, УЗИ, иглотерапия
-      </span>
-      <span>
-       [НУЖНО: подтвердить доступность услуг]
-      </span>
-     </div>
-    </div>
-   </section>
-   <section class="contact-section" id="contacts">
-    <div class="contact-finale">
-     <img alt="Иллюстрация светлого пространства клиники" height="800" loading="lazy" src="/assets/interior.webp" width="1200"/>
-     <div class="contact-finale-copy wrap">
-      <h2>
-       Место, где
-       <br/>
-       вам уделят
-       <br/>
-       <span>
-        внимание.
-       </span>
-      </h2>
-      <div>
-       <p>
-        Первый шаг может быть простым.
-        <br/>
-        Начнём с разговора.
-       </p>
-       <button class="btn btn-primary" data-book="">
-        Записаться
-        <span class="button-icon">
-         <span aria-hidden="true" class="arrow">
-          ↗
-         </span>
-        </span>
-       </button>
+      <div class="document-desk">
+        <div class="document-index" role="tablist" aria-label="Документы клиники" aria-orientation="vertical">
+          <button role="tab" id="doc-license" aria-controls="document-license" aria-selected="true">
+            <strong>Медицинская лицензия</strong>
+            <small>Право на медицинскую деятельность</small>
+          </button>
+          <button role="tab" id="doc-certificates" aria-controls="document-certificates" aria-selected="false" tabindex="-1">
+            <strong>Сертификаты специалистов</strong>
+            <small>Образование и квалификация врачей</small>
+          </button>
+          <button role="tab" id="doc-equipment" aria-controls="document-equipment" aria-selected="false" tabindex="-1">
+            <strong>Документы на оборудование</strong>
+            <small>Регистрационные удостоверения</small>
+          </button>
+        </div>
+        <div class="document-viewer">
+          <section class="document-sheet" id="document-license" role="tabpanel" aria-labelledby="doc-license" tabindex="0">
+            <div class="sheet-top"><span>Neurolab Plus</span><span class="sheet-mark" aria-hidden="true">+</span></div>
+            <h3>Медицинская лицензия</h3>
+            <p>Официальный документ о праве на медицинскую деятельность.</p>
+            <dl>
+              <div><dt>Номер и дата</dt><dd>Ожидаем данные клиники</dd></div>
+              <div><dt>Оригинал</dt><dd>Ещё не добавлен</dd></div>
+            </dl>
+            <p class="note">Когда клиника пришлёт скан, его можно будет открыть и скачать здесь.</p>
+          </section>
+          <section class="document-sheet" id="document-certificates" role="tabpanel" aria-labelledby="doc-certificates" tabindex="0" hidden>
+            <div class="sheet-top"><span>Neurolab Plus</span><span class="sheet-mark" aria-hidden="true">+</span></div>
+            <h3>Сертификаты специалистов</h3>
+            <p>Образование, специализация и повышение квалификации врачей.</p>
+            <dl>
+              <div><dt>Специалисты</dt><dd>Список уточняется</dd></div>
+              <div><dt>Оригиналы</dt><dd>Ещё не добавлены</dd></div>
+            </dl>
+            <p class="note">Сертификаты появятся вместе с профилями врачей.</p>
+          </section>
+          <section class="document-sheet" id="document-equipment" role="tabpanel" aria-labelledby="doc-equipment" tabindex="0" hidden>
+            <div class="sheet-top"><span>Neurolab Plus</span><span class="sheet-mark" aria-hidden="true">+</span></div>
+            <h3>Документы на оборудование</h3>
+            <p>Документация к диагностическому и медицинскому оборудованию.</p>
+            <dl>
+              <div><dt>Перечень</dt><dd>Ожидаем подтверждение</dd></div>
+              <div><dt>Оригиналы</dt><dd>Ещё не добавлены</dd></div>
+            </dl>
+            <p class="note">Документы будут сгруппированы по оборудованию и видам исследований.</p>
+          </section>
+        </div>
       </div>
-     </div>
-     <span class="finale-caption">
-      Иллюстрация интерьера для превью
-     </span>
-    </div>
-    <div class="contact-bottom wrap">
-     <div class="contact-details">
-      <div>
-       <span>
-        <small>
-         Адрес клиники
-        </small>
-        <strong>
-         [НУЖНО: адрес]
-        </strong>
-       </span>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts section wrap" id="contacts" aria-labelledby="contacts-title">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <h2 id="contacts-title">Приходите на приём</h2>
+          <p>Оставьте заявку, и администратор перезвонит, чтобы подобрать удобное время.</p>
+          <dl class="contact-details">
+            <div><dt>Адрес</dt><dd>[НУЖНО: адрес]</dd></div>
+            <div><dt>Часы работы</dt><dd>[НУЖНО: график работы]</dd></div>
+            <div><dt>Телефон и WhatsApp</dt><dd>[НУЖНО: номер телефона]</dd></div>
+          </dl>
+          <div class="contact-actions">
+            <button class="btn btn-primary" data-book="">Записаться на приём</button>
+            <button class="text-link" data-info="route">Как добраться <span class="arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <figure class="contact-photo">
+          <img src="assets/interior.webp" alt="Иллюстрация: светлый холл клиники" width="1400" height="933" loading="lazy">
+        </figure>
       </div>
-      <div>
-       <span>
-        <small>
-         Часы работы
-        </small>
-        <strong>
-         [НУЖНО: график работы]
-        </strong>
-       </span>
-      </div>
-      <div>
-       <span>
-        <small>
-         Телефон и WhatsApp
-        </small>
-        <strong>
-         [НУЖНО: номер телефона]
-        </strong>
-       </span>
-      </div>
-     </div>
-     <button class="text-link" data-info="route">
-      Как добраться
-      <span aria-hidden="true" class="arrow">
-       ↗
-      </span>
-     </button>
-    </div>
-   </section>
+    </section>
   </main>
+
   <footer class="footer wrap">
-   <div class="footer-top">
-    <a aria-label="Neurolab Plus, главная" class="logo" href="/">
-     <span aria-hidden="true" class="brand-mark">
-      <i>
-      </i>
-      <i>
-      </i>
-      <i>
-      </i>
-      <i>
-      </i>
-     </span>
-     <span>
-      neurolab
-      <span class="logo-plus">
-       +
-      </span>
-      <small>
-       МЕДИЦИНСКАЯ КЛИНИКА
-      </small>
-     </span>
-    </a>
-    <p>
-     Внимание к человеку.
-     <br/>
-     Забота о движении.
-    </p>
-    <a href="/services/">
-     Все направления
-     <span aria-hidden="true" class="arrow">
-      ↗
-     </span>
-    </a>
-    <a href="/privacy/">
-     Политика конфиденциальности
-    </a>
-    <a href="/terms/">
-     Условия использования
-    </a>
-   </div>
-   <div class="footer-bottom">
-    <span>
-     © 2026 Neurolab Plus
-    </span>
-    <span>
-     Частный дизайн-превью. Изображения иллюстративные.
-    </span>
-    <span>
-     [НУЖНО: юридические данные]
-    </span>
-   </div>
-  </footer>
-  <dialog aria-labelledby="booking-dialog-title" class="dialog" id="booking-dialog">
-   <button aria-label="Закрыть окно" class="dialog-close icon-button">
-    <span aria-hidden="true" class="arrow">
-     ×
-    </span>
-   </button>
-   <div class="dialog-heading">
-    <span class="eyebrow">
-     ВАШ ПЕРВЫЙ ШАГ
-    </span>
-    <h2 id="booking-dialog-title">
-     Начнём с разговора
-    </h2>
-    <p>
-     Подготовьте сообщение для записи.
-     <br/>
-     Время приёма согласует администратор.
-    </p>
-   </div>
-   <form id="booking-form" method="dialog">
-    <label>
-     Направление
-     <select id="booking-service" name="service">
-      <option>
-       Первая консультация
-      </option>
-      <option>
-       Неврология
-      </option>
-      <option>
-       МРТ
-      </option>
-      <option>
-       КТ
-      </option>
-      <option>
-       УЗИ
-      </option>
-      <option>
-       Иглотерапия
-      </option>
-      <option>
-       ЛФК
-      </option>
-      <option>
-       Реабилитация
-      </option>
-     </select>
-    </label>
-    <div class="form-pair">
-     <label>
-      Как к вам обращаться
-      <input autocomplete="given-name" id="booking-name" maxlength="60" name="name" placeholder="Ваше имя" required=""/>
-     </label>
-     <label>
-      Телефон
-      <input autocomplete="tel" id="booking-phone" maxlength="22" minlength="10" name="phone" pattern="[+0-9() .-]{10,22}" placeholder="+7 (___) ___ __ __" required="" type="tel"/>
-     </label>
+    <div class="footer-top">
+      <a class="logo" href="./" aria-label="Neurolab Plus, главная">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>neurolab<span class="logo-plus">+</span><small>медицинская клиника</small></span>
+      </a>
+      <a href="services/">Услуги</a>
+      <a href="#doctors">Врачи</a>
+      <a href="privacy/">Политика конфиденциальности</a>
+      <a href="terms/">Условия использования</a>
     </div>
-    <label>
-     Удобное время для связи
-     <select id="booking-time" name="time">
-      <option>
-       В любое время
-      </option>
-      <option>
-       Утром, с 9:00 до 12:00
-      </option>
-      <option>
-       Днём, с 12:00 до 17:00
-      </option>
-      <option>
-       Вечером, после 17:00
-      </option>
-     </select>
-    </label>
-    <p class="form-notice">
-     Превью записи. Данные не отправляются и не сохраняются. [НУЖНО: WhatsApp клиники]
-     <a href="/privacy/">
-      Как используются данные
-     </a>
-     .
-    </p>
-    <button class="btn btn-primary full" type="submit">
-     Подготовить сообщение
-     <span aria-hidden="true" class="arrow">
-      ↗
-     </span>
-    </button>
-   </form>
-   <div hidden="" id="booking-result">
-    <h3>
-     Сообщение подготовлено
-    </h3>
-    <p>
-     Запись ещё не оформлена. В этом превью сообщение можно скопировать. Отправка станет доступна после добавления номера клиники.
-    </p>
-    <textarea aria-label="Подготовленное сообщение" id="message-preview" readonly="" rows="6"></textarea>
-    <button class="btn btn-primary full" id="copy-message">
-     Скопировать сообщение
-     <span aria-hidden="true" class="arrow">
-      ↗
-     </span>
-    </button>
-    <button class="text-link" id="edit-message">
-     Изменить данные
-    </button>
-    <p id="copy-status" role="status">
-    </p>
-   </div>
-   <noscript>
-    <p>
-     Для подготовки сообщения нужен JavaScript. Данные не будут отправлены.
-    </p>
-   </noscript>
+    <div class="footer-bottom">
+      <span>© 2026 Neurolab Plus</span>
+      <span>Изображения на сайте пока иллюстративные</span>
+      <span>[НУЖНО: юридические данные]</span>
+    </div>
+  </footer>
+
+  <dialog class="dialog" id="booking-dialog" aria-labelledby="booking-dialog-title">
+    <button class="dialog-close icon-button" aria-label="Закрыть окно"><span aria-hidden="true">×</span></button>
+    <div class="dialog-heading">
+      <h2 id="booking-dialog-title">Запись на приём</h2>
+      <p>Заполните форму, и мы подготовим сообщение для администратора. Время приёма он подтвердит отдельно.</p>
+    </div>
+    <form id="booking-form" method="dialog">
+      <label>Направление
+        <select id="booking-service" name="service">
+          <option>Первая консультация</option><option>Неврология</option><option>МРТ</option><option>КТ</option><option>УЗИ</option><option>Иглотерапия</option><option>ЛФК</option><option>Реабилитация</option>
+        </select>
+      </label>
+      <div class="form-pair">
+        <label>Ваше имя<input id="booking-name" name="name" autocomplete="given-name" maxlength="60" placeholder="Как к вам обращаться" required></label>
+        <label>Телефон<input id="booking-phone" name="phone" type="tel" autocomplete="tel" minlength="10" maxlength="22" pattern="[+0-9() .-]{10,22}" placeholder="+7 (___) ___ __ __" required></label>
+      </div>
+      <label>Когда удобно ответить на звонок
+        <select id="booking-time" name="time">
+          <option>В любое время</option><option>Утром, с 9:00 до 12:00</option><option>Днём, с 12:00 до 17:00</option><option>Вечером, после 17:00</option>
+        </select>
+      </label>
+      <p class="form-notice">Это демо-версия формы: данные никуда не отправляются. <a href="privacy/">Как используются данные</a></p>
+      <button class="btn btn-primary full" type="submit">Подготовить сообщение</button>
+    </form>
+    <div id="booking-result" hidden>
+      <h3>Сообщение готово</h3>
+      <p>Запись ещё не оформлена. Скопируйте сообщение. Отправка в WhatsApp заработает, когда появится номер клиники.</p>
+      <textarea id="message-preview" rows="6" readonly aria-label="Подготовленное сообщение"></textarea>
+      <button class="btn btn-primary full" id="copy-message">Скопировать сообщение</button>
+      <button class="text-link" id="edit-message">Изменить данные</button>
+      <p id="copy-status" role="status"></p>
+    </div>
   </dialog>
-  <dialog aria-label="Информация" class="dialog small-dialog" id="info-dialog">
-   <button aria-label="Закрыть окно" class="dialog-close icon-button">
-    <span aria-hidden="true" class="arrow">
-     ×
-    </span>
-   </button>
-   <div id="info-content">
-   </div>
+
+  <dialog class="dialog small-dialog" id="info-dialog" aria-label="Информация">
+    <button class="dialog-close icon-button" aria-label="Закрыть окно"><span aria-hidden="true">×</span></button>
+    <div id="info-content"></div>
   </dialog>
-  <div class="toast" id="toast" role="status">
-  </div>
- </body>
+  <div class="toast" id="toast" role="status"></div>
+</body>
 </html>

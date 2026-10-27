@@ -1,609 +1,272 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta content="#17635f" name="theme-color"/>
-  <meta content="noindex,nofollow" name="robots"/>
-  <title>
-   Услуги | Neurolab Plus
-  </title>
-  <meta content="Neurolab Plus: первая консультация, неврология, диагностика и восстановление." name="description"/>
-  <link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
-  <link href="/styles.css" rel="stylesheet"/>
-  <link href="/art-direction.css" rel="stylesheet"/>
-  <script defer="" src="/site-config.js">
-  </script>
-  <script defer="" src="/app.js">
-  </script>
-  <script defer="" src="/hero-media.js">
-  </script>
- </head>
- <body class="inner-page">
-  <a class="skip-link" href="#main">
-   Перейти к содержанию
-  </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c3f40">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Услуги и цены | Neurolab Plus</title>
+  <meta name="description" content="Услуги Neurolab Plus: неврология, МРТ, КТ, УЗИ, иглотерапия, ЛФК и реабилитация.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../app.js"></script>
+</head>
+<body class="inner-page">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
   <header class="header wrap">
-   <a aria-label="Neurolab Plus, главная" class="logo" href="/">
-    <span aria-hidden="true" class="brand-mark">
-     <i>
-     </i>
-     <i>
-     </i>
-     <i>
-     </i>
-     <i>
-     </i>
-    </span>
-    <span>
-     neurolab
-     <span class="logo-plus">
-      +
-     </span>
-     <small>
-      МЕДИЦИНСКАЯ КЛИНИКА
-     </small>
-    </span>
-   </a>
-   <nav aria-label="Основная навигация" class="desktop-nav">
-    <a href="/">
-     Главная
+    <a class="logo" href="../" aria-label="Neurolab Plus, главная">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>neurolab<span class="logo-plus">+</span><small>медицинская клиника</small></span>
     </a>
-    <a aria-current="page" href="/services/">
-     Услуги
-    </a>
-    <a href="/#doctors">
-     Врачи
-    </a>
-    <a href="/#clinic">
-     О клинике
-    </a>
-    <a href="/#contacts">
-     Контакты
-    </a>
-   </nav>
-   <div class="header-actions">
-    <button class="btn btn-primary" data-book="">
-     Записаться
-     <span class="button-icon">
-      <span aria-hidden="true" class="arrow">
-       ↗
-      </span>
-     </span>
-    </button>
-    <button aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle icon-button">
-     <span aria-hidden="true" class="arrow">
-      Меню
-     </span>
-    </button>
-   </div>
-  </header>
-  <nav aria-label="Мобильная навигация" class="mobile-nav" hidden="" id="mobile-nav">
-   <a href="/">
-    Главная
-   </a>
-   <a href="/services/">
-    Услуги
-   </a>
-   <a href="/#doctors">
-    Врачи
-   </a>
-   <a href="/#clinic">
-    О клинике
-   </a>
-   <a href="/#contacts">
-    Контакты
-   </a>
-  </nav>
-  <main id="main">
-   <div class="wrap">
-    <nav aria-label="Хлебные крошки" class="breadcrumbs">
-     <a href="/">
-      Главная
-     </a>
-     <span aria-hidden="true" class="arrow">
-      /
-     </span>
-     <span aria-current="page">
-      Услуги
-     </span>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="../">Главная</a>
+      <a href="../services/" aria-current="page">Услуги</a>
+      <a href="../#doctors">Врачи</a>
+      <a href="../#clinic">О клинике</a>
+      <a href="../#contacts">Контакты</a>
     </nav>
-    <section class="catalog-hero">
-     <div>
-      <span class="eyebrow">
-       УСЛУГИ NEUROLAB PLUS
-      </span>
-      <h1>
-       Для здоровья.
-       <br/>
-       <span class="muted">
-        Для вашей жизни.
-       </span>
-      </h1>
-      <p>
-       От первой консультации до восстановления.
-       <br/>
-       Найдите своё направление помощи.
-      </p>
-     </div>
-    </section>
-    <section aria-label="Каталог услуг" class="catalog-section">
-     <div class="catalog-toolbar">
-      <div aria-label="Фильтр по категории" class="filters" role="group">
-       <button aria-pressed="true" data-filter="all">
-        Все направления
-        <span>
-         7
-        </span>
-       </button>
-       <button aria-pressed="false" data-filter="Консультации">
-        Консультации
-       </button>
-       <button aria-pressed="false" data-filter="Диагностика">
-        Диагностика
-       </button>
-       <button aria-pressed="false" data-filter="Восстановление">
-        Восстановление
-       </button>
-      </div>
-      <label class="search-field">
-       <input aria-label="Поиск услуг" id="service-search" placeholder="Найти услугу" type="search"/>
-      </label>
-     </div>
-     <div class="catalog-meta">
-      <span aria-live="polite" id="result-count">
-       7 направлений
-      </span>
-      <button class="text-link" hidden="" id="reset-filters">
-       Сбросить фильтры
-       <span aria-hidden="true" class="arrow">
-        ↗
-       </span>
-      </button>
-     </div>
-     <div class="catalog-grid">
-      <article class="catalog-card" data-category="Консультации" data-search="неврология консультации когда важно разобраться в том, что беспокоит.">
-       <div class="catalog-image">
-        <img alt="Иллюстрация: Неврология" height="800" loading="lazy" src="/assets/consultation.webp" width="1200"/>
-       </div>
-       <div class="catalog-card-content">
-        <span class="category-label">
-         Консультации
-        </span>
-        <h2>
-         Неврология
-        </h2>
-        <p>
-         Когда важно разобраться в том, что беспокоит.
-        </p>
-        <div class="catalog-price">
-         5 000 ₸
-         <small>
-          первая консультация*
-         </small>
-        </div>
-        <div class="catalog-actions">
-         <a class="text-link" href="/services/neurology/">
-          Подробнее
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </a>
-         <button aria-label="Записаться: Неврология" class="icon-button" data-book="Неврология">
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-        </div>
-       </div>
-      </article>
-      <article class="catalog-card" data-category="Диагностика" data-search="мрт диагностика магнитно-резонансная томография.">
-       <div class="catalog-image">
-        <img alt="Иллюстрация: МРТ" height="800" loading="lazy" src="/assets/diagnostics.webp" width="1200"/>
-       </div>
-       <div class="catalog-card-content">
-        <span class="category-label">
-         Диагностика
-        </span>
-        <h2>
-         МРТ
-        </h2>
-        <p>
-         Магнитно-резонансная томография.
-        </p>
-        <div class="catalog-price">
-         <small>
-          [НУЖНО: стоимость]
-         </small>
-        </div>
-        <div class="catalog-actions">
-         <button class="text-link" data-service-detail="МРТ">
-          Подробнее
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-         <button aria-label="Записаться: МРТ" class="icon-button" data-book="МРТ">
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-        </div>
-       </div>
-      </article>
-      <article class="catalog-card" data-category="Диагностика" data-search="кт диагностика компьютерная томография.">
-       <div class="catalog-card-content">
-        <span class="category-label">
-         Диагностика
-        </span>
-        <h2>
-         КТ
-        </h2>
-        <p>
-         Компьютерная томография.
-        </p>
-        <div class="catalog-price">
-         <small>
-          [НУЖНО: стоимость]
-         </small>
-        </div>
-        <div class="catalog-actions">
-         <button class="text-link" data-service-detail="КТ">
-          Подробнее
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-         <button aria-label="Записаться: КТ" class="icon-button" data-book="КТ">
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-        </div>
-       </div>
-      </article>
-      <article class="catalog-card" data-category="Диагностика" data-search="узи диагностика ультразвуковые исследования.">
-       <div class="catalog-card-content">
-        <span class="category-label">
-         Диагностика
-        </span>
-        <h2>
-         УЗИ
-        </h2>
-        <p>
-         Ультразвуковые исследования.
-        </p>
-        <div class="catalog-price">
-         <small>
-          [НУЖНО: стоимость]
-         </small>
-        </div>
-        <div class="catalog-actions">
-         <button class="text-link" data-service-detail="УЗИ">
-          Подробнее
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-         <button aria-label="Записаться: УЗИ" class="icon-button" data-book="УЗИ">
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-        </div>
-       </div>
-      </article>
-      <article class="catalog-card" data-category="Восстановление" data-search="иглотерапия восстановление индивидуальный подбор процедур врачом.">
-       <div class="catalog-card-content">
-        <span class="category-label">
-         Восстановление
-        </span>
-        <h2>
-         Иглотерапия
-        </h2>
-        <p>
-         Индивидуальный подбор процедур врачом.
-        </p>
-        <div class="catalog-price">
-         <small>
-          [НУЖНО: стоимость]
-         </small>
-        </div>
-        <div class="catalog-actions">
-         <button class="text-link" data-service-detail="Иглотерапия">
-          Подробнее
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-         <button aria-label="Записаться: Иглотерапия" class="icon-button" data-book="Иглотерапия">
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-        </div>
-       </div>
-      </article>
-      <article class="catalog-card" data-category="Восстановление" data-search="лфк восстановление занятия лечебной физкультурой.">
-       <div class="catalog-card-content">
-        <span class="category-label">
-         Восстановление
-        </span>
-        <h2>
-         ЛФК
-        </h2>
-        <p>
-         Занятия лечебной физкультурой.
-        </p>
-        <div class="catalog-price">
-         <small>
-          [НУЖНО: стоимость]
-         </small>
-        </div>
-        <div class="catalog-actions">
-         <button class="text-link" data-service-detail="ЛФК">
-          Подробнее
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-         <button aria-label="Записаться: ЛФК" class="icon-button" data-book="ЛФК">
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-        </div>
-       </div>
-      </article>
-      <article class="catalog-card" data-category="Восстановление" data-search="реабилитация восстановление восстановление с вниманием к вашему состоянию.">
-       <div class="catalog-image">
-        <img alt="Иллюстрация: Реабилитация" height="800" loading="lazy" src="/assets/rehab.webp" width="1200"/>
-       </div>
-       <div class="catalog-card-content">
-        <span class="category-label">
-         Восстановление
-        </span>
-        <h2>
-         Реабилитация
-        </h2>
-        <p>
-         Восстановление с вниманием к вашему состоянию.
-        </p>
-        <div class="catalog-price">
-         <small>
-          [НУЖНО: стоимость]
-         </small>
-        </div>
-        <div class="catalog-actions">
-         <button class="text-link" data-service-detail="Реабилитация">
-          Подробнее
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-         <button aria-label="Записаться: Реабилитация" class="icon-button" data-book="Реабилитация">
-          <span aria-hidden="true" class="arrow">
-           ↗
-          </span>
-         </button>
-        </div>
-       </div>
-      </article>
-     </div>
-     <div class="empty-state" hidden="" id="empty-state">
-      <h2>
-       Такой услуги пока не нашли
-      </h2>
-      <p>
-       Попробуйте другое название или сбросьте фильтры.
-      </p>
-      <button class="btn btn-primary" data-reset="">
-       Показать все услуги
-      </button>
-     </div>
-     <p class="catalog-disclaimer">
-      * Стоимость первой консультации указана по брифу клиники. [НУЖНО: условия цены, действующий реестр услуг и прайс]. Доступность исследований и процедур уточняется до записи.
-     </p>
-    </section>
-    <section class="help-strip">
-     <div>
-      <h2>
-       Не знаете, с чего начать?
-      </h2>
-      <p>
-       Начните с консультации. Поможем определить следующий шаг.
-      </p>
-     </div>
-     <button class="btn btn-primary" data-book="Первая консультация">
-      Записаться
-      <span class="button-icon">
-       <span aria-hidden="true" class="arrow">
-        ↗
-       </span>
-      </span>
-     </button>
-    </section>
-   </div>
-  </main>
-  <footer class="footer wrap">
-   <div class="footer-top">
-    <a aria-label="Neurolab Plus, главная" class="logo" href="/">
-     <span aria-hidden="true" class="brand-mark">
-      <i>
-      </i>
-      <i>
-      </i>
-      <i>
-      </i>
-      <i>
-      </i>
-     </span>
-     <span>
-      neurolab
-      <span class="logo-plus">
-       +
-      </span>
-      <small>
-       МЕДИЦИНСКАЯ КЛИНИКА
-      </small>
-     </span>
-    </a>
-    <p>
-     Внимание к человеку.
-     <br/>
-     Забота о движении.
-    </p>
-    <a href="/services/">
-     Все направления
-     <span aria-hidden="true" class="arrow">
-      ↗
-     </span>
-    </a>
-    <a href="/privacy/">
-     Политика конфиденциальности
-    </a>
-    <a href="/terms/">
-     Условия использования
-    </a>
-   </div>
-   <div class="footer-bottom">
-    <span>
-     © 2026 Neurolab Plus
-    </span>
-    <span>
-     Частный дизайн-превью. Изображения иллюстративные.
-    </span>
-    <span>
-     [НУЖНО: юридические данные]
-    </span>
-   </div>
-  </footer>
-  <dialog aria-labelledby="booking-dialog-title" class="dialog" id="booking-dialog">
-   <button aria-label="Закрыть окно" class="dialog-close icon-button">
-    <span aria-hidden="true" class="arrow">
-     ×
-    </span>
-   </button>
-   <div class="dialog-heading">
-    <span class="eyebrow">
-     ВАШ ПЕРВЫЙ ШАГ
-    </span>
-    <h2 id="booking-dialog-title">
-     Начнём с разговора
-    </h2>
-    <p>
-     Подготовьте сообщение для записи.
-     <br/>
-     Время приёма согласует администратор.
-    </p>
-   </div>
-   <form id="booking-form" method="dialog">
-    <label>
-     Направление
-     <select id="booking-service" name="service">
-      <option>
-       Первая консультация
-      </option>
-      <option>
-       Неврология
-      </option>
-      <option>
-       МРТ
-      </option>
-      <option>
-       КТ
-      </option>
-      <option>
-       УЗИ
-      </option>
-      <option>
-       Иглотерапия
-      </option>
-      <option>
-       ЛФК
-      </option>
-      <option>
-       Реабилитация
-      </option>
-     </select>
-    </label>
-    <div class="form-pair">
-     <label>
-      Как к вам обращаться
-      <input autocomplete="given-name" id="booking-name" maxlength="60" name="name" placeholder="Ваше имя" required=""/>
-     </label>
-     <label>
-      Телефон
-      <input autocomplete="tel" id="booking-phone" maxlength="22" minlength="10" name="phone" pattern="[+0-9() .-]{10,22}" placeholder="+7 (___) ___ __ __" required="" type="tel"/>
-     </label>
+    <div class="header-actions">
+      <button class="btn btn-primary" data-book="">Записаться</button>
+      <button class="menu-toggle" aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню">Меню</button>
     </div>
-    <label>
-     Удобное время для связи
-     <select id="booking-time" name="time">
-      <option>
-       В любое время
-      </option>
-      <option>
-       Утром, с 9:00 до 12:00
-      </option>
-      <option>
-       Днём, с 12:00 до 17:00
-      </option>
-      <option>
-       Вечером, после 17:00
-      </option>
-     </select>
-    </label>
-    <p class="form-notice">
-     Превью записи. Данные не отправляются и не сохраняются. [НУЖНО: WhatsApp клиники]
-     <a href="/privacy/">
-      Как используются данные
-     </a>
-     .
-    </p>
-    <button class="btn btn-primary full" type="submit">
-     Подготовить сообщение
-     <span aria-hidden="true" class="arrow">
-      ↗
-     </span>
-    </button>
-   </form>
-   <div hidden="" id="booking-result">
-    <h3>
-     Сообщение подготовлено
-    </h3>
-    <p>
-     Запись ещё не оформлена. В этом превью сообщение можно скопировать. Отправка станет доступна после добавления номера клиники.
-    </p>
-    <textarea aria-label="Подготовленное сообщение" id="message-preview" readonly="" rows="6"></textarea>
-    <button class="btn btn-primary full" id="copy-message">
-     Скопировать сообщение
-     <span aria-hidden="true" class="arrow">
-      ↗
-     </span>
-    </button>
-    <button class="text-link" id="edit-message">
-     Изменить данные
-    </button>
-    <p id="copy-status" role="status">
-    </p>
-   </div>
-   <noscript>
-    <p>
-     Для подготовки сообщения нужен JavaScript. Данные не будут отправлены.
-    </p>
-   </noscript>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация" hidden>
+    <a href="../">Главная</a>
+    <a href="../services/">Услуги</a>
+    <a href="../#doctors">Врачи</a>
+    <a href="../#clinic">О клинике</a>
+    <a href="../#contacts">Контакты</a>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="../">Главная</a><span aria-hidden="true">/</span><span aria-current="page">Услуги</span>
+      </nav>
+
+      <section class="services-hero" aria-labelledby="services-title">
+        <div class="services-hero-copy">
+          <div>
+            <h1 id="services-title">Услуги и цены</h1>
+            <p class="lede">Консультации невролога, диагностика и восстановление. Если не знаете, что выбрать, начните с первого приёма: врач подскажет, какие обследования нужны.</p>
+          </div>
+          <div class="hero-jump" aria-label="Быстрый выбор категории">
+            <button data-filter="Консультации" data-scroll>Консультации <b>1</b></button>
+            <button data-filter="Диагностика" data-scroll>Диагностика <b>3</b></button>
+            <button data-filter="Восстановление" data-scroll>Восстановление <b>3</b></button>
+          </div>
+        </div>
+        <div class="services-hero-media">
+          <figure class="services-hero-photo">
+            <img src="../assets/interior.webp" alt="Иллюстрация: холл клиники" width="1400" height="933">
+          </figure>
+          <div class="services-hero-price">
+            <div>
+              <span>Первая консультация невролога</span>
+              <strong>5 000 ₸</strong>
+              <p>И две процедуры после приёма без доплаты</p>
+            </div>
+            <button class="btn btn-primary" data-book="Первая консультация">Записаться</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="catalog-head">
+          <h2 id="catalog-title">Все направления</h2>
+          <p>Стоимость исследований и процедур уточняйте у администратора при записи.</p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="filters" role="group" aria-label="Фильтр по категории">
+            <button data-filter="all" aria-pressed="true">Все <span>7</span></button>
+            <button data-filter="Консультации" aria-pressed="false">Консультации</button>
+            <button data-filter="Диагностика" aria-pressed="false">Диагностика</button>
+            <button data-filter="Восстановление" aria-pressed="false">Восстановление</button>
+          </div>
+          <label class="search-field">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="service-search" type="search" placeholder="Найти услугу" aria-label="Поиск услуг">
+          </label>
+        </div>
+        <div class="catalog-meta">
+          <span id="result-count" aria-live="polite">7 направлений</span>
+          <button class="text-link" id="reset-filters" hidden>Сбросить фильтры</button>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card is-feature has-image" data-category="Консультации" data-search="неврология консультация невролог головная боль спина шея головокружение онемение">
+            <div class="catalog-image"><img src="../assets/consultation.webp" alt="" width="1200" height="800" loading="lazy"></div>
+            <div class="catalog-card-content">
+              <span class="category-label">Консультации</span>
+              <h2>Неврология</h2>
+              <p>Головная боль, боль в спине и шее, головокружение, онемение рук и ног.</p>
+              <div class="catalog-price">5 000 ₸<small>первая консультация*</small></div>
+              <div class="catalog-actions">
+                <button class="btn" data-book="Неврология">Записаться</button>
+                <a class="text-link" href="neurology/">Подробнее <span class="arrow" aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card is-wide has-image" data-category="Диагностика" data-search="мрт диагностика магнитно-резонансная томография">
+            <div class="catalog-image"><img src="../assets/diagnostics.webp" alt="" width="1400" height="933" loading="lazy" style="object-position:center 60%"></div>
+            <div class="catalog-card-content">
+              <span class="category-label">Диагностика</span>
+              <h2>МРТ</h2>
+              <p>Магнитно-резонансная томография.</p>
+              <div class="catalog-actions">
+                <button class="btn" data-book="МРТ">Записаться</button>
+                <button class="text-link" data-service-detail="МРТ">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card tone-lilac" data-category="Диагностика" data-search="кт диагностика компьютерная томография">
+            <div class="catalog-card-content">
+              <span class="category-label">Диагностика</span>
+              <h2>КТ</h2>
+              <p>Компьютерная томография.</p>
+              <div class="catalog-actions">
+                <button class="text-link" data-service-detail="КТ">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+                <button class="icon-button" data-book="КТ" aria-label="Записаться на КТ"><span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="Диагностика" data-search="узи диагностика ультразвуковые исследования ультразвук">
+            <div class="catalog-card-content">
+              <span class="category-label">Диагностика</span>
+              <h2>УЗИ</h2>
+              <p>Ультразвуковые исследования.</p>
+              <div class="catalog-actions">
+                <button class="text-link" data-service-detail="УЗИ">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+                <button class="icon-button" data-book="УЗИ" aria-label="Записаться на УЗИ"><span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card is-wide has-image" data-category="Восстановление" data-search="реабилитация восстановление после травм обострений">
+            <div class="catalog-image"><img src="../assets/rehab.webp" alt="" width="1400" height="933" loading="lazy" style="object-position:55% 30%"></div>
+            <div class="catalog-card-content">
+              <span class="category-label">Восстановление</span>
+              <h2>Реабилитация</h2>
+              <p>Программа восстановления после травм и обострений.</p>
+              <div class="catalog-actions">
+                <button class="btn" data-book="Реабилитация">Записаться</button>
+                <button class="text-link" data-service-detail="Реабилитация">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card tone-sage" data-category="Восстановление" data-search="иглотерапия восстановление рефлексотерапия иглоукалывание">
+            <div class="catalog-card-content">
+              <span class="category-label">Восстановление</span>
+              <h2>Иглотерапия</h2>
+              <p>Курс процедур подбирает врач.</p>
+              <div class="catalog-actions">
+                <button class="text-link" data-service-detail="Иглотерапия">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+                <button class="icon-button" data-book="Иглотерапия" aria-label="Записаться на иглотерапию"><span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card" data-category="Восстановление" data-search="лфк восстановление лечебная физкультура занятия">
+            <div class="catalog-card-content">
+              <span class="category-label">Восстановление</span>
+              <h2>ЛФК</h2>
+              <p>Занятия лечебной физкультурой с инструктором.</p>
+              <div class="catalog-actions">
+                <button class="text-link" data-service-detail="ЛФК">Подробнее <span class="arrow" aria-hidden="true">↗</span></button>
+                <button class="icon-button" data-book="ЛФК" aria-label="Записаться на ЛФК"><span class="arrow" aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <h2>Такой услуги не нашли</h2>
+          <p>Попробуйте другое название или покажите все направления.</p>
+          <button class="btn btn-primary" data-reset>Показать все услуги</button>
+        </div>
+        <p class="catalog-disclaimer note">* Стоимость первой консультации указана по данным клиники. [НУЖНО: условия цены и действующий прайс]. Доступность исследований уточняется при записи.</p>
+      </section>
+
+      <section class="visit-steps" aria-labelledby="steps-title">
+        <h2 id="steps-title">Как записаться</h2>
+        <ol class="steps-track">
+          <li><h3>Выберите услугу</h3><p>Или сразу первую консультацию, если не уверены, что нужно.</p></li>
+          <li><h3>Оставьте заявку</h3><p>Имя, телефон и удобное время для звонка.</p></li>
+          <li><h3>Ждите звонка</h3><p>Администратор подберёт время приёма и подтвердит стоимость.</p></li>
+        </ol>
+      </section>
+
+      <section class="help-strip">
+        <div>
+          <h2>Не знаете, с чего начать?</h2>
+          <p>Запишитесь на консультацию невролога. Врач определит, какие обследования действительно нужны.</p>
+        </div>
+        <button class="btn btn-primary" data-book="Первая консультация">Записаться на консультацию</button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="footer-top">
+      <a class="logo" href="../" aria-label="Neurolab Plus, главная">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>neurolab<span class="logo-plus">+</span><small>медицинская клиника</small></span>
+      </a>
+      <a href="../services/">Услуги</a>
+      <a href="../#doctors">Врачи</a>
+      <a href="../privacy/">Политика конфиденциальности</a>
+      <a href="../terms/">Условия использования</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Neurolab Plus</span>
+      <span>Изображения на сайте пока иллюстративные</span>
+      <span>[НУЖНО: юридические данные]</span>
+    </div>
+  </footer>
+
+  <dialog class="dialog" id="booking-dialog" aria-labelledby="booking-dialog-title">
+    <button class="dialog-close icon-button" aria-label="Закрыть окно"><span aria-hidden="true">×</span></button>
+    <div class="dialog-heading">
+      <h2 id="booking-dialog-title">Запись на приём</h2>
+      <p>Заполните форму, и мы подготовим сообщение для администратора. Время приёма он подтвердит отдельно.</p>
+    </div>
+    <form id="booking-form" method="dialog">
+      <label>Направление
+        <select id="booking-service" name="service">
+          <option>Первая консультация</option><option>Неврология</option><option>МРТ</option><option>КТ</option><option>УЗИ</option><option>Иглотерапия</option><option>ЛФК</option><option>Реабилитация</option>
+        </select>
+      </label>
+      <div class="form-pair">
+        <label>Ваше имя<input id="booking-name" name="name" autocomplete="given-name" maxlength="60" placeholder="Как к вам обращаться" required></label>
+        <label>Телефон<input id="booking-phone" name="phone" type="tel" autocomplete="tel" minlength="10" maxlength="22" pattern="[+0-9() .-]{10,22}" placeholder="+7 (___) ___ __ __" required></label>
+      </div>
+      <label>Когда удобно ответить на звонок
+        <select id="booking-time" name="time">
+          <option>В любое время</option><option>Утром, с 9:00 до 12:00</option><option>Днём, с 12:00 до 17:00</option><option>Вечером, после 17:00</option>
+        </select>
+      </label>
+      <p class="form-notice">Это демо-версия формы: данные никуда не отправляются. <a href="../privacy/">Как используются данные</a></p>
+      <button class="btn btn-primary full" type="submit">Подготовить сообщение</button>
+    </form>
+    <div id="booking-result" hidden>
+      <h3>Сообщение готово</h3>
+      <p>Запись ещё не оформлена. Скопируйте сообщение. Отправка в WhatsApp заработает, когда появится номер клиники.</p>
+      <textarea id="message-preview" rows="6" readonly aria-label="Подготовленное сообщение"></textarea>
+      <button class="btn btn-primary full" id="copy-message">Скопировать сообщение</button>
+      <button class="text-link" id="edit-message">Изменить данные</button>
+      <p id="copy-status" role="status"></p>
+    </div>
   </dialog>
-  <dialog aria-label="Информация" class="dialog small-dialog" id="info-dialog">
-   <button aria-label="Закрыть окно" class="dialog-close icon-button">
-    <span aria-hidden="true" class="arrow">
-     ×
-    </span>
-   </button>
-   <div id="info-content">
-   </div>
+
+  <dialog class="dialog small-dialog" id="info-dialog" aria-label="Информация">
+    <button class="dialog-close icon-button" aria-label="Закрыть окно"><span aria-hidden="true">×</span></button>
+    <div id="info-content"></div>
   </dialog>
-  <div class="toast" id="toast" role="status">
-  </div>
- </body>
+  <div class="toast" id="toast" role="status"></div>
+</body>
 </html>

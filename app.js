@@ -168,7 +168,10 @@ function filterServices() {
 function resetFilters() { state.filter = 'all'; state.search = ''; search.value = ''; filterServices(); }
 if (search) {
   search.addEventListener('input', () => { state.search = search.value; filterServices(); });
-  $$('[data-filter]').forEach(el => el.addEventListener('click', () => { state.filter = el.dataset.filter; filterServices(); }));
+  $$('[data-filter]').forEach(el => el.addEventListener('click', () => {
+    state.filter = el.dataset.filter; filterServices();
+    if (el.hasAttribute('data-scroll')) $('#catalog')?.scrollIntoView({ behavior: reduced.matches ? 'auto' : 'smooth', block: 'start' });
+  }));
   $('#reset-filters').addEventListener('click', resetFilters);
   $('[data-reset]').addEventListener('click', resetFilters);
 }
