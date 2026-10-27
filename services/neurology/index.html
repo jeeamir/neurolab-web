@@ -7,9 +7,12 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Неврология | Neurolab Plus</title>
   <meta name="description" content="Консультация невролога в Neurolab Plus. Первая консультация 5 000 ₸.">
+  <script>(function(){var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('js-motion');setTimeout(function(){if(!window.__motionReady)d.classList.remove('js-motion')},3000)}})();</script>
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../styles.css">
   <script defer src="../../app.js"></script>
+  <script defer src="../../assets/vendor/anime.min.js"></script>
+  <script defer src="../../motion.js"></script>
 </head>
 <body class="inner-page">
   <a class="skip-link" href="#main">Перейти к содержанию</a>
@@ -47,15 +50,15 @@
       <section class="neuro-hero">
         <div class="neuro-copy">
           <h1>Консультация невролога</h1>
-          <p>Головная боль, боль в спине, головокружение или онемение. Врач разберётся в причине и составит план лечения.</p>
-          <button class="btn" data-book="Неврология">Записаться на приём</button>
-          <div class="neuro-price">
+          <p data-intro>Головная боль, боль в спине, головокружение или онемение. Врач разберётся в причине и составит план лечения.</p>
+          <button class="btn" data-book="Неврология" data-intro>Записаться на приём</button>
+          <div class="neuro-price" data-intro>
             <strong>5 000 ₸</strong>
             <span>первая консультация* и две процедуры после приёма без доплаты</span>
           </div>
         </div>
-        <figure>
-          <img src="../../assets/hero-film-poster.webp" alt="Иллюстрация: невролог на приёме" width="1672" height="941">
+        <figure data-intro-side>
+          <img data-parallax src="../../assets/hero-film-poster.webp" alt="Иллюстрация: невролог на приёме" width="1672" height="941">
         </figure>
       </section>
 
@@ -71,7 +74,7 @@
           <h2>С чем обращаются к неврологу</h2>
           <p>Выбирать диагноз или обследование заранее не нужно. Просто расскажите врачу, что вас беспокоит.</p>
         </div>
-        <div class="question-list">
+        <div class="question-list" data-reveal="tiles">
           <div><h3>Головная боль</h3></div>
           <div><h3>Боль в спине и шее</h3></div>
           <div><h3>Головокружение</h3></div>
@@ -84,7 +87,7 @@
           <h2>Как проходит приём</h2>
           <p>Без спешки и сложных терминов. Вот что ждёт вас на консультации.</p>
         </div>
-        <ol class="steps-track">
+        <ol class="steps-track" data-reveal="tiles">
           <li><h3>Разговор</h3><p>Врач выслушает жалобы и расспросит об истории здоровья и самочувствии.</p></li>
           <li><h3>Осмотр</h3><p>Проведёт осмотр и обсудит, какие данные нужны для оценки состояния.</p></li>
           <li><h3>План</h3><p>Объяснит рекомендации и скажет, нужны ли дополнительные исследования.</p></li>
@@ -118,7 +121,7 @@
           <h2>Частые вопросы</h2>
           <p>Что важно знать до первого приёма.</p>
         </div>
-        <div class="faq-list">
+        <div class="faq-list" data-reveal>
           <details>
             <summary>Что входит в консультацию за 5 000 ₸?<span class="arrow" aria-hidden="true">+</span></summary>
             <p>Беседа, осмотр, рекомендации и план дальнейшей диагностики и лечения. [НУЖНО: окончательный состав услуги и условия цены].</p>
@@ -138,7 +141,7 @@
         </div>
       </section>
 
-      <section class="neuro-close">
+      <section class="neuro-close" data-reveal-self>
         <div>
           <h2>Запишитесь на консультацию</h2>
           <p>Администратор перезвонит и подберёт удобное время.</p>

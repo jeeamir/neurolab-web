@@ -7,12 +7,15 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Neurolab Plus — неврология, диагностика и реабилитация</title>
   <meta name="description" content="Neurolab Plus: приём невролога, МРТ, ЛФК и реабилитация. Первая консультация 5 000 ₸.">
+  <script>(function(){var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('js-motion');setTimeout(function(){if(!window.__motionReady)d.classList.remove('js-motion')},3000)}})();</script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/hero-film-poster.webp" as="image">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="art-direction.css">
   <script defer src="site-config.js"></script>
   <script defer src="app.js"></script>
+  <script defer src="assets/vendor/anime.min.js"></script>
+  <script defer src="motion.js"></script>
   <script defer src="hero-media.js"></script>
 </head>
 <body class="home-page">
@@ -58,14 +61,14 @@
       <div class="hero-inner">
         <div class="hero-content">
           <h1 id="hero-title">Поможем справиться с болью и вернуться к движению</h1>
-          <p class="hero-lede">Приём невролога, МРТ и реабилитация в одной клинике. Врач разберётся в причине и составит понятный план лечения.</p>
-          <div class="hero-actions">
+          <p class="hero-lede" data-intro>Приём невролога, МРТ и реабилитация в одной клинике. Врач разберётся в причине и составит понятный план лечения.</p>
+          <div class="hero-actions" data-intro>
             <button class="btn btn-lilac" data-book="">Записаться на приём</button>
             <a class="btn btn-glass" href="services/">Все услуги</a>
           </div>
         </div>
 
-        <div class="hero-side">
+        <div class="hero-side" data-intro-side>
           <button class="hero-offer" data-book="Первая консультация">
             <span class="hero-offer-title">Первая консультация невролога</span>
             <strong>5 000 ₸</strong>
@@ -81,19 +84,19 @@
 
     <!-- Первый приём -->
     <section class="visit section wrap" id="consultation" aria-labelledby="visit-title">
-      <div class="section-heading">
+      <div class="section-heading" data-reveal>
         <h2 id="visit-title">Как проходит первый приём</h2>
         <p>Расскажите, что беспокоит. Врач выслушает, проведёт осмотр и объяснит, что делать дальше. Готовое МРТ для записи не нужно.</p>
       </div>
 
-      <div class="visit-bento">
+      <div class="visit-bento" data-reveal="tiles">
         <figure class="visit-photo consultation-photo">
-          <img src="assets/consultation.webp" alt="Иллюстрация: врач беседует с пациенткой" width="1200" height="800" loading="lazy">
+          <img data-parallax src="assets/consultation.webp" alt="Иллюстрация: врач беседует с пациенткой" width="1200" height="800" loading="lazy">
         </figure>
 
         <div class="visit-price">
           <span class="visit-price-title">Консультация невролога</span>
-          <strong>5 000 <span>₸</span></strong>
+          <strong><span data-count="5000">5 000</span> <span class="cur">₸</span></strong>
           <p>Стоимость первого приёма. Инструментальная диагностика оплачивается отдельно. <span class="todo">[НУЖНО: условия цены]</span></p>
           <button class="btn btn-primary" data-book="Первая консультация">Записаться</button>
         </div>
@@ -130,13 +133,14 @@
 
     <!-- Направления: мозаика вместо ряда карточек -->
     <section class="directions" id="directions" aria-labelledby="directions-title">
+      <span class="orb orb-a" aria-hidden="true"></span><span class="orb orb-b" aria-hidden="true"></span>
       <div class="wrap">
-        <div class="directions-head">
+        <div class="directions-head" data-reveal>
           <h2 id="directions-title">Направления</h2>
           <p>Начните с консультации невролога или сразу запишитесь на исследование и занятия.</p>
         </div>
 
-        <div class="mosaic">
+        <div class="mosaic" data-reveal="tiles">
           <article class="tile tile-neuro">
             <div class="tile-neuro-photo" aria-hidden="true">
               <img src="assets/doctor.webp" alt="" width="850" height="1275" loading="lazy">
@@ -198,7 +202,7 @@
 
     <!-- Врачи -->
     <section class="team section wrap" id="doctors" aria-labelledby="team-title">
-      <div class="team-head">
+      <div class="team-head" data-reveal>
         <div>
           <h2 id="team-title">Врачи клиники</h2>
           <p>Сейчас здесь иллюстрации. Скоро добавим фотографии, имена и опыт специалистов.</p>
@@ -210,7 +214,7 @@
         </div>
       </div>
 
-      <article class="doctor-profile" id="doctor-neuro" role="tabpanel" aria-labelledby="doctor-neuro-tab" tabindex="0">
+      <article class="doctor-profile" data-reveal="tiles" id="doctor-neuro" role="tabpanel" aria-labelledby="doctor-neuro-tab" tabindex="0">
         <figure class="profile-portrait">
           <div class="portrait-image">
             <img src="assets/doctor.webp" alt="Иллюстративный портрет, не фотография врача клиники" width="850" height="1275" loading="lazy">
@@ -266,11 +270,11 @@
 
     <!-- Документы -->
     <section class="docs wrap" id="clinic" aria-labelledby="documents-heading">
-      <div class="docs-head">
+      <div class="docs-head" data-reveal>
         <h2 id="documents-heading">Лицензия и документы</h2>
         <p>Лицензия клиники, сертификаты врачей и документы на оборудование. Выберите, что хотите посмотреть.</p>
       </div>
-      <div class="document-desk">
+      <div class="document-desk" data-reveal="tiles">
         <div class="document-index" role="tablist" aria-label="Документы клиники" aria-orientation="vertical">
           <button role="tab" id="doc-license" aria-controls="document-license" aria-selected="true">
             <strong>Медицинская лицензия</strong>
@@ -322,7 +326,7 @@
 
     <!-- Контакты -->
     <section class="contacts section wrap" id="contacts" aria-labelledby="contacts-title">
-      <div class="contact-panel">
+      <div class="contact-panel" data-reveal="tiles">
         <div class="contact-copy">
           <h2 id="contacts-title">Приходите на приём</h2>
           <p>Оставьте заявку, и администратор перезвонит, чтобы подобрать удобное время.</p>
@@ -337,7 +341,7 @@
           </div>
         </div>
         <figure class="contact-photo">
-          <img src="assets/interior.webp" alt="Иллюстрация: светлый холл клиники" width="1400" height="933" loading="lazy">
+          <img data-parallax src="assets/interior.webp" alt="Иллюстрация: светлый холл клиники" width="1400" height="933" loading="lazy">
         </figure>
       </div>
     </section>

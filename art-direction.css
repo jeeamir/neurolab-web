@@ -41,7 +41,7 @@
 .visit-price{grid-column:8/13;background:var(--lilac);border-radius:var(--r-xl);padding:32px;display:flex;flex-direction:column;align-items:flex-start}
 .visit-price-title{font-size:15px;font-weight:600}
 .visit-price strong{display:block;font:400 clamp(64px,6vw,92px)/1 Onest,sans-serif;letter-spacing:-.055em;margin:18px 0 14px}
-.visit-price strong span{font-size:.5em}
+.visit-price strong .cur{font-size:.5em}
 .visit-price p{font-size:14px;color:#4c3e5a;margin-bottom:24px;max-width:36ch}
 .visit-price .btn{margin-top:auto}
 .todo{display:block;margin-top:4px;opacity:.8}
@@ -259,4 +259,75 @@
 }
 @media(prefers-reduced-motion:reduce){
   .hero-offer:hover{transform:none}
+}
+
+/* ================= Палитра и движение на главной ================= */
+.home-page .header.is-floating{position:fixed;top:12px}
+.home-page .header.is-floating~.mobile-nav{position:fixed;top:96px}
+.hero{border-radius:calc(var(--r-xl) + var(--hero-p,0) * 28px)}
+.hero-media{will-change:transform;transform-origin:60% 40%}
+.hero-inner{will-change:transform,opacity}
+.hero-offer-note{display:inline-block;margin-top:2px}
+.hero-offer-note:before{content:"+2";display:inline-grid;place-items:center;min-width:30px;height:22px;margin-right:8px;border-radius:999px;background:var(--apricot);color:var(--apricot-ink);font-size:12px;font-weight:700;vertical-align:1px}
+
+/* Первый приём */
+.bonus-mark{background:var(--apricot);color:var(--apricot-ink)}
+.visit-bonus .text-link{color:var(--apricot)}
+.visit-steps-list li:not(:last-child):after{background:linear-gradient(90deg,var(--lilac) calc(var(--fill,0)*100%),var(--canvas) 0)}
+.visit-steps-list li:before{transition:background-color .4s,color .4s,scale .4s var(--ease-out)}
+.js-motion .visit-steps-list li:first-child:before{background:var(--canvas);color:var(--lilac-ink)}
+.js-motion .visit-steps-list li.is-active:before{background:var(--lilac);color:var(--ink);scale:1.08}
+.visit-price strong [data-count]{font-variant-numeric:tabular-nums}
+
+/* Направления: тёмный блок с мягкими цветными пятнами */
+.directions{position:relative;overflow:hidden;isolation:isolate}
+.orb{position:absolute;z-index:-1;border-radius:50%;filter:blur(70px);opacity:.38;pointer-events:none;will-change:transform}
+.orb-a{width:520px;height:520px;background:var(--lilac);top:-180px;right:-140px}
+.orb-b{width:460px;height:460px;background:#4fae92;bottom:-200px;left:-160px;opacity:.3}
+.tile{transition:translate .5s var(--ease-out),box-shadow .5s}
+.tile-photo>img{transition:scale 1s var(--ease-out)}
+.tile-neuro-photo{transition:translate .8s var(--ease-out)}
+.tile-neuro:before{transition:scale .9s var(--ease-out)}
+@media(hover:hover){
+  .tile:hover{translate:0 -5px;box-shadow:0 34px 60px -36px rgba(0,0,0,.6)}
+  .tile-photo:hover>img{scale:1.06}
+  .tile-neuro:hover .tile-neuro-photo{translate:0 -10px}
+  .tile-neuro:hover:before{scale:1.06}
+}
+.tile-lfk{background:var(--mint-soft)}
+.tile-lfk .tile-tag{background:rgba(255,255,255,.7);color:var(--mint-ink)}
+.tile-more .chips span{transition:background-color .25s,border-color .25s}
+.tile-more:hover .chips span{border-color:rgba(245,246,241,.5)}
+.tile-more-link{transition:background-color .25s}
+.tile-more:hover .tile-more-link{background:#d8c4ee}
+
+/* Врачи */
+.profile-photo{background:var(--mint)}
+.partners-panel article:nth-child(2){background:var(--mint-soft)}
+.partners-panel article:nth-child(3){background:var(--apricot-soft)}
+.profile-facts>div:nth-child(1){background:var(--lilac-soft)}
+.profile-facts>div:nth-child(2){background:var(--mint-soft)}
+.profile-facts>div:nth-child(3){background:var(--apricot-soft)}
+
+/* Документы */
+.document-viewer{background:var(--mint-soft)}
+.document-index button{transition:background-color .3s,translate .4s var(--ease-out)}
+@media(hover:hover){.document-index button:not([aria-selected=true]):hover{translate:6px 0}}
+
+/* Контакты */
+.contact-photo{isolation:isolate}
+
+@media(max-width:900px){
+  .home-page .header.is-floating{top:10px}
+  .home-page .header.is-floating~.mobile-nav{top:88px}
+}
+@media(max-width:650px){
+  .hero{border-radius:var(--r-lg)}
+  .home-page .header.is-floating{left:10px;right:10px}
+  .home-page .header.is-floating~.mobile-nav{top:84px}
+  .orb-a{width:320px;height:320px}
+  .orb-b{width:300px;height:300px}
+}
+@media(max-width:650px){
+  .visit-steps-list li:not(:last-child):after{background:linear-gradient(180deg,var(--lilac) calc(var(--fill,0)*100%),var(--canvas) 0)}
 }

@@ -7,9 +7,12 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Услуги и цены | Neurolab Plus</title>
   <meta name="description" content="Услуги Neurolab Plus: неврология, МРТ, КТ, УЗИ, иглотерапия, ЛФК и реабилитация.">
+  <script>(function(){var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('js-motion');setTimeout(function(){if(!window.__motionReady)d.classList.remove('js-motion')},3000)}})();</script>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
   <script defer src="../app.js"></script>
+  <script defer src="../assets/vendor/anime.min.js"></script>
+  <script defer src="../motion.js"></script>
 </head>
 <body class="inner-page">
   <a class="skip-link" href="#main">Перейти к содержанию</a>
@@ -48,17 +51,17 @@
         <div class="services-hero-copy">
           <div>
             <h1 id="services-title">Услуги и цены</h1>
-            <p class="lede">Консультации невролога, диагностика и восстановление. Если не знаете, что выбрать, начните с первого приёма: врач подскажет, какие обследования нужны.</p>
+            <p class="lede" data-intro>Консультации невролога, диагностика и восстановление. Если не знаете, что выбрать, начните с первого приёма: врач подскажет, какие обследования нужны.</p>
           </div>
-          <div class="hero-jump" aria-label="Быстрый выбор категории">
+          <div class="hero-jump" data-intro aria-label="Быстрый выбор категории">
             <button data-filter="Консультации" data-scroll>Консультации <b>1</b></button>
             <button data-filter="Диагностика" data-scroll>Диагностика <b>3</b></button>
             <button data-filter="Восстановление" data-scroll>Восстановление <b>3</b></button>
           </div>
         </div>
-        <div class="services-hero-media">
+        <div class="services-hero-media" data-intro-side>
           <figure class="services-hero-photo">
-            <img src="../assets/interior.webp" alt="Иллюстрация: холл клиники" width="1400" height="933">
+            <img data-parallax src="../assets/interior.webp" alt="Иллюстрация: холл клиники" width="1400" height="933">
           </figure>
           <div class="services-hero-price">
             <div>
@@ -72,7 +75,7 @@
       </section>
 
       <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
-        <div class="catalog-head">
+        <div class="catalog-head" data-reveal>
           <h2 id="catalog-title">Все направления</h2>
           <p>Стоимость исследований и процедур уточняйте у администратора при записи.</p>
         </div>
@@ -94,7 +97,7 @@
           <button class="text-link" id="reset-filters" hidden>Сбросить фильтры</button>
         </div>
 
-        <div class="catalog-grid">
+        <div class="catalog-grid" data-reveal="tiles">
           <article class="catalog-card is-feature has-image" data-category="Консультации" data-search="неврология консультация невролог головная боль спина шея головокружение онемение">
             <div class="catalog-image"><img src="../assets/consultation.webp" alt="" width="1200" height="800" loading="lazy"></div>
             <div class="catalog-card-content">
@@ -134,7 +137,7 @@
             </div>
           </article>
 
-          <article class="catalog-card" data-category="Диагностика" data-search="узи диагностика ультразвуковые исследования ультразвук">
+          <article class="catalog-card tone-mint" data-category="Диагностика" data-search="узи диагностика ультразвуковые исследования ультразвук">
             <div class="catalog-card-content">
               <span class="category-label">Диагностика</span>
               <h2>УЗИ</h2>
@@ -159,7 +162,7 @@
             </div>
           </article>
 
-          <article class="catalog-card tone-sage" data-category="Восстановление" data-search="иглотерапия восстановление рефлексотерапия иглоукалывание">
+          <article class="catalog-card tone-apricot" data-category="Восстановление" data-search="иглотерапия восстановление рефлексотерапия иглоукалывание">
             <div class="catalog-card-content">
               <span class="category-label">Восстановление</span>
               <h2>Иглотерапия</h2>
@@ -171,7 +174,7 @@
             </div>
           </article>
 
-          <article class="catalog-card" data-category="Восстановление" data-search="лфк восстановление лечебная физкультура занятия">
+          <article class="catalog-card tone-mint" data-category="Восстановление" data-search="лфк восстановление лечебная физкультура занятия">
             <div class="catalog-card-content">
               <span class="category-label">Восстановление</span>
               <h2>ЛФК</h2>
@@ -193,15 +196,15 @@
       </section>
 
       <section class="visit-steps" aria-labelledby="steps-title">
-        <h2 id="steps-title">Как записаться</h2>
-        <ol class="steps-track">
+        <h2 id="steps-title" data-reveal-self>Как записаться</h2>
+        <ol class="steps-track" data-reveal="tiles">
           <li><h3>Выберите услугу</h3><p>Или сразу первую консультацию, если не уверены, что нужно.</p></li>
           <li><h3>Оставьте заявку</h3><p>Имя, телефон и удобное время для звонка.</p></li>
           <li><h3>Ждите звонка</h3><p>Администратор подберёт время приёма и подтвердит стоимость.</p></li>
         </ol>
       </section>
 
-      <section class="help-strip">
+      <section class="help-strip" data-reveal-self>
         <div>
           <h2>Не знаете, с чего начать?</h2>
           <p>Запишитесь на консультацию невролога. Врач определит, какие обследования действительно нужны.</p>
