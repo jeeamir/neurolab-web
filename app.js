@@ -58,56 +58,25 @@ $$('dialog').forEach(dialog => {
     if (event.clientX < b.left || event.clientX > b.right || event.clientY < b.top || event.clientY > b.bottom) dialog.close();
   });
 });
-const booking = $('#booking-dialog');
-const form = $('#booking-form');
-const result = $('#booking-result');
-function openBooking(service) {
-  const selected = service === 'selected' ? state.selected : service || state.selected;
-  $('#booking-service').value = allowed.includes(selected) ? selected : 'Первая консультация';
-  form.hidden = false; result.hidden = true; $('#copy-status').textContent = '';
-  openDialog(booking);
+// Запись: кнопки [data-book] открывают WhatsApp клиники с готовым сообщением
+function whatsappLink(service) {
+  const number = (window.NEUROLAB_CONFIG && window.NEUROLAB_CONFIG.whatsapp) || '77085904094';
+  const name = service === 'selected' ? state.selected : service;
+  const text = name
+    ? `Здравствуйте! Хочу записаться в Neurolab Plus: ${name}. Подскажите, пожалуйста, ближайшее свободное время.`
+    : 'Здравствуйте! Хочу записаться на приём в Neurolab Plus. Подскажите, пожалуйста, ближайшее свободное время.';
+  return `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
 }
 document.addEventListener('click', e => {
   const button = e.target.closest('[data-book]');
-  if (button) openBooking(button.dataset.book);
+  if (!button) return;
+  e.preventDefault();
+  if (allowed.includes(button.dataset.book)) selectDirection(button.dataset.book);
+  window.open(whatsappLink(button.dataset.book), '_blank', 'noopener');
 });
-form.addEventListener('submit', event => {
-  event.preventDefault();
-  const phone = $('#booking-phone');
-  const digits = phone.value.replace(/\D/g, '');
-  phone.setCustomValidity(digits.length >= 10 && digits.length <= 15 ? '' : 'Введите корректный номер телефона: от 10 до 15 цифр.');
-  if (!form.reportValidity()) return;
-  const name = $('#booking-name').value.trim();
-  if (!name) { $('#booking-name').setCustomValidity('Укажите ваше имя.'); form.reportValidity(); return; }
-  const service = $('#booking-service').value;
-  selectDirection(service);
-  const message = `Здравствуйте! Хочу записаться в Neurolab Plus.\nНаправление: ${service}.\nИмя: ${name}.\nТелефон: ${phone.value.trim()}.\nУдобное время для связи: ${$('#booking-time').value}.\nПожалуйста, подскажите ближайшее время приёма и подтвердите стоимость.`;
-  $('#message-preview').value = message;
-  form.hidden = true; result.hidden = false;
-  $('#copy-message').focus();
-});
-$('#booking-phone').addEventListener('input', e => e.target.setCustomValidity(''));
-$('#booking-name').addEventListener('input', e => e.target.setCustomValidity(''));
-$('#edit-message').addEventListener('click', () => { result.hidden = true; form.hidden = false; $('#booking-name').focus(); });
-$('#copy-message').addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText($('#message-preview').value);
-    $('#copy-status').textContent = 'Сообщение скопировано. В клинику оно не отправлено.';
-  } catch {
-    $('#message-preview').focus(); $('#message-preview').select();
-    $('#copy-status').textContent = 'Автоматическое копирование недоступно. Текст выделен: скопируйте его вручную.';
-  }
-});
-booking.addEventListener('close', () => { form.reset(); $('#message-preview').value = ''; $('#copy-status').textContent = ''; });
 
 const info = {
-  license: ['Медицинская лицензия', 'Лицензия клиники будет доступна здесь для увеличения и просмотра.', '[НУЖНО: скан, номер, срок действия и разрешённые юридические формулировки]. В превью документ не подменяется образцом.'],
-  certificates: ['Сертификаты специалистов', 'Здесь появится галерея подтверждённых документов врачей.', '[НУЖНО: сертификаты, имена специалистов и согласие на публикацию].'],
-  equipment: ['Документы на оборудование', 'Документы будут сгруппированы по оборудованию и методам.', '[НУЖНО: подтверждённые сертификаты и список действующего оборудования].'],
-  doctor: ['Познакомимся ближе', 'Карточка врача будет содержать имя, специальность, квалификацию, опыт и расписание.', '[НУЖНО: данные врача, настоящее фото, сертификаты и согласие на публикацию]. Изображение в этом превью иллюстративное.'],
-  procedures: ['Две процедуры после консультации', 'По брифу Neurolab Plus после консультации предусмотрены две бесплатные процедуры. Их подбирает врач индивидуально по показаниям.', '[НУЖНО: перечень процедур, критерии участия, ограничения и срок действия предложения].'],
-  route: ['Как добраться', 'После подтверждения адреса здесь появятся карта, ориентиры и ссылка на построение маршрута.', '[НУЖНО: точный адрес клиники, вход, парковка и ссылка на карту].'],
-  privacy: ['Конфиденциальность в превью', 'Форма работает в вашем браузере. Имя и телефон не передаются на сервер, не записываются в хранилище и удаляются при закрытии окна. Вы сами можете скопировать подготовленное сообщение.', 'В течение сессии браузер запоминает только выбранное направление. [НУЖНО: утверждённая политика клиники и юридические данные перед запуском реальной записи].']
+  procedures: ['Две процедуры без доплаты', 'После первой консультации невролог подберёт две процедуры по вашим показаниям. Отдельно за них платить не нужно.', 'Подробные условия уточните у администратора в WhatsApp.']
 };
 function showInfo(key) {
   const data = info[key]; if (!data) return;
@@ -121,8 +90,7 @@ $$('[data-service-detail]').forEach(el => el.addEventListener('click', () => {
   const name = el.dataset.serviceDetail;
   const root = $('#info-content'); root.replaceChildren();
   const h = document.createElement('h2'); h.textContent = name; root.append(h);
-  const p = document.createElement('p'); p.textContent = 'Направление указано в брифе клиники. Состав услуги, доступность и стоимость уточняются перед записью.'; root.append(p);
-  const note = document.createElement('p'); note.textContent = '[НУЖНО: описание, условия и цена услуги]'; root.append(note);
+  const p = document.createElement('p'); p.textContent = 'Состав услуги, подготовку и стоимость подскажет администратор. Напишите в WhatsApp, и вам подберут удобное время.'; root.append(p);
   const button = document.createElement('button'); button.className = 'btn btn-primary'; button.textContent = 'Записаться'; button.dataset.book = name; root.append(button);
   openDialog($('#info-dialog'));
 }));
@@ -176,7 +144,7 @@ if (search) {
   $('[data-reset]').addEventListener('click', resetFilters);
 }
 $('#download-checklist')?.addEventListener('click', () => {
-  const text = 'NEUROLAB PLUS\nПАМЯТКА ПЕРЕД ПЕРВОЙ КОНСУЛЬТАЦИЕЙ\n\nВозьмите с собой:\n• Предыдущие заключения и результаты обследований.\n• Список принимаемых препаратов.\n• Вопросы, которые хотите задать врачу.\n\nДо визита уточните у администратора:\n• Адрес, дату и время приёма.\n• Имя специалиста и стоимость консультации.\n• Условия предложения с двумя процедурами.\n\nЭто памятка из дизайн-превью, а не подтверждение записи.\nКонтакты клиники ещё не предоставлены.';
+  const text = 'NEUROLAB PLUS\nПАМЯТКА ПЕРЕД ПЕРВОЙ КОНСУЛЬТАЦИЕЙ\n\nВозьмите с собой:\n• Предыдущие заключения и результаты обследований.\n• Список принимаемых препаратов.\n• Вопросы, которые хотите задать врачу.\n\nДо визита уточните у администратора:\n• Адрес, дату и время приёма.\n• Имя специалиста и стоимость консультации.\n• Условия предложения с двумя процедурами.\n\nNeurolab Plus: мкр. Жетысу-2, 70Б.\nТелефон и WhatsApp: +7 708 590 40 94.';
   const url = URL.createObjectURL(new Blob(['\uFEFF' + text], { type: 'text/plain;charset=utf-8' }));
   const a = document.createElement('a'); a.href = url; a.download = 'Neurolab-Plus-памятка.txt'; a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000); toast('Памятка сохранена');

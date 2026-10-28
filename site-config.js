@@ -3,6 +3,8 @@
 // Сейчас стоит заглушка, сделанная из постера. Замените её на видео клиники.
 // heroVideoMobile — необязательная вертикальная версия для телефонов.
 window.NEUROLAB_CONFIG = Object.assign({
-  heroVideo: 'assets/hero-placeholder.mp4',
-  heroVideoMobile: ''
+  heroVideo: '',
+  heroVideoMobile: '',
+  // Номер WhatsApp клиники: только цифры, с кодом страны. Все кнопки «Записаться» открывают чат с ним.
+  whatsapp: '77085904094'
 }, window.NEUROLAB_CONFIG || {});
