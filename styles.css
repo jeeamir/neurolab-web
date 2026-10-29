@@ -395,3 +395,23 @@ button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
 @media(max-width:650px){.catalog-card.is-wide .catalog-image:after{background:linear-gradient(180deg,rgba(20,18,36,0) 25%,rgba(20,18,36,.5) 55%,rgba(20,18,36,.85) 100%)}}
 @media(hover:hover){.catalog-card:hover{box-shadow:0 24px 40px -32px rgba(22,18,40,.4)}}
 .footer-bottom a:hover{color:var(--on-dark)}
+
+/* Фото врача на странице неврологии */
+.neuro-doctor-photo img{inset:0;bottom:0;height:100%;object-fit:cover;object-position:50% 18%}
+.neuro-doctor h3{font-size:clamp(26px,2.4vw,34px);margin:14px 0 10px}
+
+/* ---------- Цены и виды МРТ ---------- */
+.price-section{padding-top:clamp(64px,7vw,104px)}
+.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start}
+.price-grid-3{grid-template-columns:repeat(3,1fr)}
+.price-group{background:var(--paper);border-radius:var(--r-xl);padding:clamp(20px,2.4vw,32px)}
+.price-group h3{font-size:clamp(22px,1.9vw,26px);margin:0 0 14px 12px}
+.price-group ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.price-row{display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%;min-height:48px;padding:12px;border-radius:var(--r-md);text-align:left;font-size:15px;line-height:1.4;transition:background-color .2s}
+.price-row b{flex-shrink:0;font:500 17px/1.2 Onest,sans-serif;font-variant-numeric:tabular-nums;color:var(--teal);white-space:nowrap}
+.price-row .arrow{flex-shrink:0;color:var(--mint-ink);transition:translate .25s var(--ease-out)}
+.price-row:hover{background:var(--lilac-soft)}
+.mri-section .price-row:hover{background:var(--mint-soft)}
+.price-row:hover .arrow{translate:3px -3px}
+@media(max-width:1100px){.price-grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.price-grid,.price-grid-3{grid-template-columns:1fr;gap:12px}.price-group{border-radius:var(--r-lg)}}

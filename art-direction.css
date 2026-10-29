@@ -398,3 +398,20 @@
   .hero-shade{background:linear-gradient(0deg,rgba(22,18,40,.8) 0%,rgba(22,18,40,.5) 45%,rgba(22,18,40,0) 75%)}
 }
 @media(prefers-reduced-motion:reduce){.hero-offer{animation:none}}
+
+/* ================= Настоящие врачи и документы ================= */
+.tile-neuro:before{display:none}
+.tile-neuro-photo{top:0;bottom:0;right:0;width:46%;height:auto}
+.tile-neuro-photo img{object-fit:cover;object-position:50% 18%}
+.profile-photo img{object-position:50% 18%}
+.profile-copy h3{max-width:none}
+.doctor-role{margin-top:10px;font-size:15px;font-weight:600;color:var(--teal)}
+.profile-copy>.doctor-role+p{margin-top:16px;max-width:52ch}
+.document-sheet .note{margin-top:4px;max-width:60ch}
+.doc-links{display:flex;flex-wrap:wrap;gap:4px 24px;margin-top:16px}
+.doc-links .text-link{color:var(--mint-ink)}
+.document-sheet dd{max-width:60%}
+@media(max-width:650px){
+  .tile-neuro-photo{top:auto;left:0;width:auto;height:52%}
+  .document-sheet dd{max-width:none}
+}

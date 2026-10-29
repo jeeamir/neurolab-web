@@ -175,3 +175,9 @@ $$('.consultation-photo img, .portrait-image img, .catalog-image img, .neuro-doc
   img.addEventListener('load', finish, {once:true});
   img.addEventListener('error', finish, {once:true});
 });
+
+// Ссылки «Документы врача» сразу открывают нужную вкладку
+$$('[data-open-tab]').forEach(link => link.addEventListener('click', () => {
+  const tab = document.getElementById(link.dataset.openTab);
+  if (tab) tab.click();
+}));
