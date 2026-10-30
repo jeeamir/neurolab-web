@@ -415,3 +415,20 @@
   .tile-neuro-photo{top:auto;left:0;width:auto;height:52%}
   .document-sheet dd{max-width:none}
 }
+
+/* ================= Спокойнее: белые карточки, меньше цвета ================= */
+.directions{background:var(--canvas)}
+.directions .orb{display:none}
+.tile-neuro.tile-photo{color:var(--on-dark)}
+.tile-neuro.tile-photo>img{object-position:50% 40%}
+.tile-neuro.tile-photo .tile-body{max-width:70%}
+.tile-neuro.tile-photo p{color:#eef0f6}
+.tile-neuro.tile-photo h3{margin-top:auto}
+.tile-photo .text-link{color:#fff}
+.tile-mri .tile-actions,.tile-rehab .tile-actions{margin-top:14px}
+.tile-more{background:var(--paper)}
+@media(max-width:650px){
+  .tile-neuro.tile-photo{min-height:420px;justify-content:flex-end}
+  .tile-neuro.tile-photo .tile-body{max-width:none;height:100%}
+  .tile-neuro.tile-photo h3{margin-top:auto}
+}

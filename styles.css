@@ -415,3 +415,16 @@ button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
 .price-row:hover .arrow{translate:3px -3px}
 @media(max-width:1100px){.price-grid-3{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.price-grid,.price-grid-3{grid-template-columns:1fr;gap:12px}.price-group{border-radius:var(--r-lg)}}
+
+/* Страница услуг: светлый первый блок, белые карточки */
+.services-hero-copy{background:var(--paper);color:var(--ink)}
+.services-hero-copy p{color:var(--muted)}
+.hero-jump button{background:var(--canvas);color:var(--ink)}
+.hero-jump button:hover{background:var(--lilac-soft)}
+.hero-jump button[aria-pressed=true]{background:var(--lilac-soft)}
+.hero-jump b{background:var(--paper);color:var(--teal)}
+.services-hero-price{background:var(--lilac-soft)}
+.catalog-card .category-label{background:var(--canvas);color:var(--muted)}
+.has-image .category-label{background:rgba(251,252,254,.92);color:var(--ink)}
+.catalog-card .text-link{margin-top:16px}
+.has-image .text-link{color:#fff}
