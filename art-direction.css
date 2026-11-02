@@ -432,3 +432,9 @@
   .tile-neuro.tile-photo .tile-body{max-width:none;height:100%}
   .tile-neuro.tile-photo h3{margin-top:auto}
 }
+
+/* Второй ряд галереи: три одинаковых кадра */
+.clinic-gallery-even{grid-template-columns:repeat(3,1fr);margin-top:16px}
+.clinic-gallery-even .clinic-shot{height:clamp(320px,30vw,460px)}
+@media(max-width:900px){.clinic-gallery-even{grid-template-columns:1fr 1fr}.clinic-gallery-even .clinic-shot:last-child{grid-column:1/-1}}
+@media(max-width:650px){.clinic-gallery-even{margin-top:12px}.clinic-gallery-even .clinic-shot{height:260px}}
