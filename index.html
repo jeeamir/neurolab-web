@@ -197,16 +197,40 @@
       <div class="team-head" data-reveal>
         <div>
           <h2 id="team-title">Врачи клиники</h2>
-          <p>Невролог и специалист по опорно-двигательному аппарату. Выберите врача и запишитесь через WhatsApp.</p>
-        </div>
-        <div class="segmented" role="tablist" aria-label="Команда и партнёры">
-          <button role="tab" id="doctor-neuro-tab" aria-controls="doctor-neuro" aria-selected="true">Неврология</button>
-          <button role="tab" id="doctor-rehab-tab" aria-controls="doctor-rehab" aria-selected="false" tabindex="-1">Опорно-двигательный аппарат</button>
-          <button role="tab" id="partners-tab" aria-controls="partners-panel" aria-selected="false" tabindex="-1">Партнёры</button>
+          <p>Неврологи, реабилитологи и рефлексотерапевт. Выберите врача и запишитесь через WhatsApp.</p>
         </div>
       </div>
+      <div class="doctor-picker" role="tablist" aria-label="Врачи клиники" data-reveal>
+          <button role="tab" id="doc-stepuk-tab" aria-controls="doctor-stepuk" aria-selected="true">
+            <img src="assets/doctor-stepuk.webp" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Степук Н. В.</strong><small>Главный врач</small></span>
+          </button>
+          <button role="tab" id="doc-bagila-tab" aria-controls="doctor-bagila" aria-selected="false" tabindex="-1">
+            <img src="assets/doctor-bagila.webp" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Джумабаева Б. Р.</strong><small>Невролог</small></span>
+          </button>
+          <button role="tab" id="doc-talgat-tab" aria-controls="doctor-talgat" aria-selected="false" tabindex="-1">
+            <img src="assets/doctor-talgat.webp" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Куканов Т. К.</strong><small>Медицинский директор</small></span>
+          </button>
+          <button role="tab" id="doc-aidyn-tab" aria-controls="doctor-aidyn" aria-selected="false" tabindex="-1">
+            <img src="assets/doctor-aidyn.webp" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Жұмабай А. Қ.</strong><small>Врач-реабилитолог</small></span>
+          </button>
+          <button role="tab" id="doc-evgeny-tab" aria-controls="doctor-evgeny" aria-selected="false" tabindex="-1">
+            <img src="assets/doctor-evgeny.webp" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Шарапов Е. В.</strong><small>Специалист по опорно-двигательному аппарату</small></span>
+          </button>
+          <button role="tab" id="doc-ilyar-tab" aria-controls="doctor-ilyar" aria-selected="false" tabindex="-1">
+            <img src="assets/doctor-ilyar.webp" alt="" width="44" height="44" loading="lazy">
+            <span><strong>Ибрагимов И. Д.</strong><small>Рефлексотерапевт</small></span>
+          </button>
+          <button role="tab" id="partners-tab" aria-controls="partners-panel" aria-selected="false" tabindex="-1" class="picker-plain">
+            <span><strong>Партнёры</strong><small>Лаборатория и сервис</small></span>
+          </button>
+      </div>
 
-      <article class="doctor-profile" data-reveal="tiles" id="doctor-neuro" role="tabpanel" aria-labelledby="doctor-neuro-tab" tabindex="0">
+      <article class="doctor-profile" data-reveal="tiles" id="doctor-stepuk" role="tabpanel" aria-labelledby="doc-stepuk-tab" tabindex="0">
         <figure class="profile-portrait profile-photo">
           <div class="portrait-image">
             <img src="assets/doctor-stepuk.webp" alt="Степук Николай Валерьевич, главный врач, невролог" width="912" height="1280" loading="lazy">
@@ -228,7 +252,72 @@
         </div>
       </article>
 
-      <article class="doctor-profile" id="doctor-rehab" role="tabpanel" aria-labelledby="doctor-rehab-tab" tabindex="0" hidden>
+      <article class="doctor-profile" id="doctor-bagila" role="tabpanel" aria-labelledby="doc-bagila-tab" tabindex="0" hidden>
+        <figure class="profile-portrait profile-photo">
+          <div class="portrait-image">
+            <img src="assets/doctor-bagila.webp" alt="Джумабаева Багила Раматуллаевна, невролог" width="902" height="1600" loading="lazy">
+          </div>
+        </figure>
+        <div class="profile-copy">
+          <h3>Джумабаева Багила Раматуллаевна</h3>
+          <p class="doctor-role">Невролог</p>
+          <p>Невролог и терапевт со стажем 10 лет. Диагностика и лечение заболеваний центральной и периферической нервной системы, болей в спине и позвоночнике с неврологическими симптомами. Работала в скорой помощи и в ГКБ № 4, преподаёт в КазНУ им. аль-Фараби. В Neurolab Plus с 2024 года.</p>
+          <dl class="profile-facts">
+            <div><dt>Стаж</dt><dd>10 лет</dd></div>
+            <div><dt>Сертификат</dt><dd>Неврология, до 2029 г.</dd></div>
+            <div><dt>Первая консультация</dt><dd>5 000 ₸</dd></div>
+          </dl>
+          <div class="profile-actions">
+            <button class="btn btn-primary" data-book="Неврология, к Джумабаевой Багиле Раматуллаевне">Записаться к неврологу</button>
+            <a class="text-link" href="#documents" data-open-tab="doc-certificates">Документы врача <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="doctor-profile" id="doctor-talgat" role="tabpanel" aria-labelledby="doc-talgat-tab" tabindex="0" hidden>
+        <figure class="profile-portrait profile-photo">
+          <div class="portrait-image">
+            <img src="assets/doctor-talgat.webp" alt="Куканов Талгат Кайроллаевич, медицинский директор, реабилитолог I категории" width="576" height="572" loading="lazy">
+          </div>
+        </figure>
+        <div class="profile-copy">
+          <h3>Куканов Талгат Кайроллаевич</h3>
+          <p class="doctor-role">Медицинский директор, реабилитолог I категории</p>
+          <p>Спортивный врач и реабилитолог. Лечение и реабилитация после ортопедических и травматологических операций, восстановление после инсульта. Врач мужской национальной сборной Казахстана по боксу, преподаёт спортивную медицину. Стажировался в Чехии, Литве и Barça Innovation Hub.</p>
+          <dl class="profile-facts">
+            <div><dt>Категория</dt><dd>Реабилитолог I категории</dd></div>
+            <div><dt>В Neurolab Plus</dt><dd>С 2022 года</dd></div>
+            <div><dt>Направление</dt><dd>Реабилитация после операций и инсульта</dd></div>
+          </dl>
+          <div class="profile-actions">
+            <button class="btn btn-primary" data-book="реабилитация, к Куканову Талгату Кайроллаевичу">Записаться на приём</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="doctor-profile" id="doctor-aidyn" role="tabpanel" aria-labelledby="doc-aidyn-tab" tabindex="0" hidden>
+        <figure class="profile-portrait profile-photo">
+          <div class="portrait-image">
+            <img src="assets/doctor-aidyn.webp" alt="Жұмабай Айдын Қабдылмәлікұлы, врач-реабилитолог, физиотерапевт" width="1086" height="1448" loading="lazy">
+          </div>
+        </figure>
+        <div class="profile-copy">
+          <h3>Жұмабай Айдын Қабдылмәлікұлы</h3>
+          <p class="doctor-role">Врач-реабилитолог, физиотерапевт</p>
+          <p>Восстановление после травм и операций, в том числе после переломов и эндопротезирования коленного и тазобедренного суставов. Лечение при артрозах, остеохондрозе, протрузиях и грыжах дисков. Физиотерапия, плазмотерапия и лечебный массаж для взрослых и детей.</p>
+          <dl class="profile-facts">
+            <div><dt>Стаж</dt><dd>13 лет</dd></div>
+            <div><dt>Сертификат</dt><dd>Медицинская реабилитология, до 2029 г.</dd></div>
+            <div><dt>Пациенты</dt><dd>Взрослые и дети</dd></div>
+          </dl>
+          <div class="profile-actions">
+            <button class="btn btn-primary" data-book="реабилитация, к Жұмабаю Айдыну Қабдылмәлікұлы">Записаться на приём</button>
+            <a class="text-link" href="#documents" data-open-tab="doc-certificates">Документы врача <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="doctor-profile" id="doctor-evgeny" role="tabpanel" aria-labelledby="doc-evgeny-tab" tabindex="0" hidden>
         <figure class="profile-portrait profile-photo">
           <div class="portrait-image">
             <img src="assets/doctor-evgeny.webp" alt="Шарапов Евгений Викторович, специалист по опорно-двигательному аппарату" width="1086" height="1448" loading="lazy">
@@ -245,6 +334,27 @@
           </dl>
           <div class="profile-actions">
             <button class="btn btn-primary" data-book="приём к Шарапову Евгению Викторовичу (опорно-двигательный аппарат)">Записаться на приём</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="doctor-profile" id="doctor-ilyar" role="tabpanel" aria-labelledby="doc-ilyar-tab" tabindex="0" hidden>
+        <figure class="profile-portrait profile-photo">
+          <div class="portrait-image">
+            <img src="assets/doctor-ilyar.webp" alt="Ибрагимов Ильяр Даниярович, рефлексотерапевт, иглотерапевт, мануальный терапевт" width="1086" height="1448" loading="lazy">
+          </div>
+        </figure>
+        <div class="profile-copy">
+          <h3>Ибрагимов Ильяр Даниярович</h3>
+          <p class="doctor-role">Рефлексотерапевт, иглотерапевт, мануальный терапевт</p>
+          <p>Учился в Синьцзянском медицинском университете традиционной китайской медицины и работал в народной больнице «Zhong Yi Yuan» в Урумчи. Иглотерапия, мануальные техники, моксотерапия, баночный массаж, гуаша и су-джок.</p>
+          <dl class="profile-facts">
+            <div><dt>Стаж</dt><dd>15 лет</dd></div>
+            <div><dt>Образование</dt><dd>Традиционная китайская медицина, КНР</dd></div>
+            <div><dt>Методы</dt><dd>Иглотерапия, мануальная терапия</dd></div>
+          </dl>
+          <div class="profile-actions">
+            <button class="btn btn-primary" data-book="иглотерапия, к Ибрагимову Ильяру Данияровичу">Записаться на приём</button>
           </div>
         </div>
       </article>
@@ -332,18 +442,34 @@
           <section class="document-sheet" id="document-certificates" role="tabpanel" aria-labelledby="doc-certificates" tabindex="0" hidden>
             <div class="sheet-top"><span>Neurolab Plus</span><span class="sheet-mark" aria-hidden="true">+</span></div>
             <h3>Сертификаты специалистов</h3>
-            <p>Степук Николай Валерьевич, главный врач, невролог.</p>
+            <p>Сертификаты специалистов можно проверить на портале elicense.kz.</p>
+            <h4 class="cert-name">Степук Николай Валерьевич, невролог</h4>
             <dl>
               <div><dt>Сертификат специалиста</dt><dd>Неврология, действителен до 01.12.2028</dd></div>
               <div><dt>Повышение квалификации</dt><dd>«Современные вопросы неврологии», 162 часа, 2020</dd></div>
-              <div><dt>Резидентура</dt><dd>Неврология, КазНМУ им. С. Д. Асфендиярова, 2013</dd></div>
-              <div><dt>Образование</dt><dd>КазНМУ им. С. Д. Асфендиярова, 2010, диплом с отличием</dd></div>
+              <div><dt>Образование</dt><dd>КазНМУ им. С. Д. Асфендиярова, 2010, резидентура по неврологии, 2013</dd></div>
             </dl>
             <div class="doc-links">
               <a class="text-link" href="assets/docs/stepuk-certificate.pdf" target="_blank" rel="noopener">Сертификат, PDF <span class="arrow" aria-hidden="true">↗</span></a>
               <a class="text-link" href="assets/docs/stepuk-qualification.webp" target="_blank" rel="noopener">Повышение квалификации <span class="arrow" aria-hidden="true">↗</span></a>
               <a class="text-link" href="assets/docs/stepuk-residency.webp" target="_blank" rel="noopener">Резидентура <span class="arrow" aria-hidden="true">↗</span></a>
               <a class="text-link" href="assets/docs/stepuk-diploma.webp" target="_blank" rel="noopener">Диплом <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+            <h4 class="cert-name">Джумабаева Багила Раматуллаевна, невролог</h4>
+            <dl>
+              <div><dt>Сертификат специалиста</dt><dd>Неврология (взрослая), действителен до 02.09.2029</dd></div>
+              <div><dt>Образование</dt><dd>КазНМУ им. С. Д. Асфендиярова, 2014, переподготовка по неврологии, 2018</dd></div>
+            </dl>
+            <div class="doc-links">
+              <a class="text-link" href="assets/docs/dzhumabaeva-certificate.pdf" target="_blank" rel="noopener">Сертификат, PDF <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+            <h4 class="cert-name">Жұмабай Айдын Қабдылмәлікұлы, реабилитолог</h4>
+            <dl>
+              <div><dt>Сертификат специалиста</dt><dd>Медицинская реабилитология (взрослая, детская), действителен до 26.11.2029</dd></div>
+              <div><dt>Образование</dt><dd>КазНМУ им. С. Д. Асфендиярова, лечебное дело, 2009</dd></div>
+            </dl>
+            <div class="doc-links">
+              <a class="text-link" href="assets/docs/zhumabay-certificate.pdf" target="_blank" rel="noopener">Сертификат, PDF <span class="arrow" aria-hidden="true">↗</span></a>
             </div>
           </section>
           <section class="document-sheet" id="document-equipment" role="tabpanel" aria-labelledby="doc-equipment" tabindex="0" hidden>
