@@ -20,7 +20,7 @@
     el.innerHTML = text.split(' ').map(w => `<span class="w" aria-hidden="true"><span>${w}</span></span>`).join(' ');
     return $$('.w > span', el);
   }
-  const heroTitle = $('.hero-content h1, .services-hero-copy h1, .neuro-copy h1');
+  const heroTitle = $('.hero-content h1, .services-hero-copy h1, .neuro-copy h1, .page-head h1');
   if (heroTitle) {
     const words = splitWords(heroTitle);
     const tl = A.timeline({ easing: ease });
