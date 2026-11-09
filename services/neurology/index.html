@@ -68,7 +68,7 @@
       <nav class="page-nav" aria-label="На этой странице">
         <a href="#questions">С чем обратиться</a>
         <a href="#appointment">Как проходит приём</a>
-        <a href="#neurologist">Специалист</a>
+        <a href="#neurologist">Неврологи</a>
         <a href="#faq">Частые вопросы</a>
       </nav>
 
@@ -102,20 +102,32 @@
         </div>
       </section>
 
-      <section class="neuro-doctor section" id="neurologist">
-        <div class="neuro-doctor-photo">
-          <img src="../../assets/doctor-stepuk.webp" alt="Степук Николай Валерьевич, главный врач, невролог" width="912" height="1280" loading="lazy">
+      <section class="neuro-team section" id="neurologist" aria-labelledby="neuro-team-title">
+        <div class="catalog-head" data-reveal>
+          <h2 id="neuro-team-title">Неврологи клиники</h2>
+          <p>Можно выбрать врача при записи. Если всё равно, администратор предложит ближайшее время.</p>
         </div>
-        <div>
-          <h2>Ваш невролог</h2>
-          <h3>Степук Николай Валерьевич</h3>
-          <p>Главный врач клиники, невролог и терапевт. Окончил КазНМУ им. С. Д. Асфендиярова с красным дипломом и резидентуру по неврологии. С 2013 года работает в нейроинсультном отделении ГКБ № 7. Принимает пациентов с головной болью, болью в спине и шее, головокружением, онемением рук и ног.</p>
-          <div class="doctor-facts">
-            <span>Опыт с 2013 года</span>
-            <span>Сертификат невролога до 2028 г.</span>
-            <span>Первая консультация 5 000 ₸</span>
-          </div>
-          <button class="btn btn-primary" data-book="Неврология, к Степуку Николаю Валерьевичу">Записаться к неврологу</button>
+        <div class="neuro-team-grid" data-reveal="tiles">
+          <article class="neuro-card">
+            <div class="neuro-card-photo"><img src="../../assets/doctor-stepuk.webp" alt="Степук Николай Валерьевич, главный врач, невролог" width="912" height="1280" loading="lazy"></div>
+            <div class="neuro-card-copy">
+              <h3>Степук Николай Валерьевич</h3>
+              <p class="doctor-role">Главный врач, невролог</p>
+              <p>Невролог и терапевт. Окончил КазНМУ им. С. Д. Асфендиярова с красным дипломом и резидентуру по неврологии. С 2013 года работает в нейроинсультном отделении ГКБ № 7.</p>
+              <div class="doctor-facts"><span>Опыт с 2013 года</span><span>Сертификат до 2028 г.</span></div>
+              <button class="btn btn-primary" data-book="Неврология, к Степуку Николаю Валерьевичу">Записаться</button>
+            </div>
+          </article>
+          <article class="neuro-card">
+            <div class="neuro-card-photo"><img src="../../assets/doctor-bagila.webp" alt="Джумабаева Багила Раматуллаевна, невролог" width="902" height="1600" loading="lazy"></div>
+            <div class="neuro-card-copy">
+              <h3>Джумабаева Багила Раматуллаевна</h3>
+              <p class="doctor-role">Невролог</p>
+              <p>Невролог и терапевт со стажем 10 лет. Лечение заболеваний нервной системы, болей в спине и позвоночнике с неврологическими симптомами.</p>
+              <div class="doctor-facts"><span>Стаж 10 лет</span><span>Сертификат до 2029 г.</span></div>
+              <button class="btn btn-primary" data-book="Неврология, к Джумабаевой Багиле Раматуллаевне">Записаться</button>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -147,7 +159,7 @@
       <section class="neuro-close" data-reveal-self>
         <div>
           <h2>Запишитесь на консультацию</h2>
-          <p>Администратор перезвонит и подберёт удобное время.</p>
+          <p>Напишите в WhatsApp, и администратор подберёт удобное время.</p>
         </div>
         <button class="btn btn-primary" data-book="Неврология">Записаться на приём</button>
       </section>

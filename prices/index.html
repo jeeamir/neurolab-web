@@ -53,25 +53,33 @@
         <h1 id="page-title">Цены</h1>
         <p class="lede" data-intro>Цены в тенге. Нажмите на услугу, чтобы записаться через WhatsApp: администратор подберёт время и подтвердит стоимость.</p>
         <div class="page-jump" data-intro>
-          <a href="#prices">Консультации и процедуры</a>
+          <a href="#prices">Процедуры</a>
           <a href="#mri">Виды МРТ</a>
         </div>
       </section>
+
+      <section class="consult-banner" data-reveal-self aria-label="Первая консультация">
+        <div>
+          <h2>Первая консультация невролога</h2>
+          <p>Разговор, осмотр и план лечения. После приёма — две процедуры без доплаты по назначению врача.</p>
+        </div>
+        <div class="consult-banner-side">
+          <strong>5 000 ₸</strong>
+          <button class="btn btn-primary" data-book="Первая консультация невролога">Записаться</button>
+        </div>
+      </section>
+
       <section class="price-section" id="prices" aria-labelledby="prices-title">
         <div class="catalog-head" data-reveal>
-          <h2 id="prices-title">Консультации и процедуры</h2>
+          <h2 id="prices-title">Процедуры</h2>
           <p>Стоимость указана за одну процедуру. Курс подбирает врач.</p>
         </div>
         <div class="price-grid" data-reveal="tiles">
           <div class="price-group">
-            <h3>Консультации</h3>
-            <ul>
-              <li><button class="price-row" data-book="Первая консультация невролога"><span>Первая консультация невролога</span><b>5 000 ₸</b></button></li>
-            </ul>
-            <p class="price-note">После первой консультации — две процедуры без доплаты по назначению врача.</p>
-          </div>
-          <div class="price-group">
-            <h3>Массаж</h3>
+            <div class="price-group-head">
+              <div><h3>Массаж</h3><p>Лечебный, общий и косметический массаж.</p></div>
+              <div class="price-meta"><span class="price-from">от 7 000 ₸</span><small>9 услуг</small></div>
+            </div>
             <ul>
               <li><button class="price-row" data-book="Массаж спины (грудной и поясничный отдел)"><span>Массаж спины (грудной и поясничный отдел)</span><b>10 000 ₸</b></button></li>
               <li><button class="price-row" data-book="Массаж нижних конечностей"><span>Массаж нижних конечностей</span><b>10 000 ₸</b></button></li>
@@ -85,7 +93,22 @@
             </ul>
           </div>
           <div class="price-group">
-            <h3>Остеопатия и мануальная терапия</h3>
+            <div class="price-group-head">
+              <div><h3>Лечебные процедуры</h3><p>Иглотерапия, плазмотерапия и блокады.</p></div>
+              <div class="price-meta"><span class="price-from">от 9 000 ₸</span><small>4 услуги</small></div>
+            </div>
+            <ul>
+              <li><button class="price-row" data-book="Иглорефлексотерапия"><span>Иглорефлексотерапия</span><b>9 000 ₸</b></button></li>
+              <li><button class="price-row" data-book="Хиджама"><span>Хиджама</span><b>20 000 ₸</b></button></li>
+              <li><button class="price-row" data-book="PRP-терапия (плазмотерапия)"><span>PRP-терапия (плазмотерапия)</span><b>30 000 ₸</b></button></li>
+              <li><button class="price-row" data-book="Лечебно-медикаментозная блокада"><span>Лечебно-медикаментозная блокада</span><b>30 000 ₸</b></button></li>
+            </ul>
+          </div>
+          <div class="price-group">
+            <div class="price-group-head">
+              <div><h3>Остеопатия и мануальная терапия</h3><p>Работа с позвоночником, суставами и мышцами.</p></div>
+              <div class="price-meta"><span class="price-from">от 10 000 ₸</span><small>7 услуг</small></div>
+            </div>
             <ul>
               <li><button class="price-row" data-book="Остеопатия: шейный отдел позвоночника"><span>Остеопатия: шейный отдел позвоночника</span><b>15 000 ₸</b></button></li>
               <li><button class="price-row" data-book="Остеопатия: грудной отдел позвоночника"><span>Остеопатия: грудной отдел позвоночника</span><b>15 000 ₸</b></button></li>
@@ -97,22 +120,16 @@
             </ul>
           </div>
           <div class="price-group">
-            <h3>Физиотерапия</h3>
+            <div class="price-group-head">
+              <div><h3>Физиотерапия</h3><p>Аппаратное лечение и стимуляция мышц.</p></div>
+              <div class="price-meta"><span class="price-from">от 4 000 ₸</span><small>5 услуг</small></div>
+            </div>
             <ul>
               <li><button class="price-row" data-book="ЭНМС (электронейромиостимуляция)"><span>ЭНМС (электронейромиостимуляция)</span><b>4 000 ₸</b></button></li>
               <li><button class="price-row" data-book="ТЕКАР-терапия"><span>ТЕКАР-терапия</span><b>7 500 ₸</b></button></li>
               <li><button class="price-row" data-book="Хилт-терапия"><span>Хилт-терапия</span><b>7 500 ₸</b></button></li>
               <li><button class="price-row" data-book="ТМС"><span>ТМС</span><b>10 000 ₸</b></button></li>
               <li><button class="price-row" data-book="Озонотерапия"><span>Озонотерапия</span><b>10 000 ₸</b></button></li>
-            </ul>
-          </div>
-          <div class="price-group">
-            <h3>Лечебные процедуры</h3>
-            <ul>
-              <li><button class="price-row" data-book="Иглорефлексотерапия"><span>Иглорефлексотерапия</span><b>9 000 ₸</b></button></li>
-              <li><button class="price-row" data-book="Хиджама"><span>Хиджама</span><b>20 000 ₸</b></button></li>
-              <li><button class="price-row" data-book="PRP-терапия (плазмотерапия)"><span>PRP-терапия (плазмотерапия)</span><b>30 000 ₸</b></button></li>
-              <li><button class="price-row" data-book="Лечебно-медикаментозная блокада"><span>Лечебно-медикаментозная блокада</span><b>30 000 ₸</b></button></li>
             </ul>
           </div>
         </div>
@@ -124,43 +141,50 @@
           <p>Стоимость исследования подскажет администратор. Для исследований с контрастом используется препарат Гадовист.</p>
         </div>
         <div class="price-grid price-grid-3" data-reveal="tiles">
-          <div class="price-group">
-            <h3>Суставы, кисти и стопы</h3>
+          <div class="price-group is-mri">
+            <div class="price-group-head">
+              <div><h3>Суставы, кисти и стопы</h3><p>Крупные суставы, кисти и стопы.</p></div>
+              <div class="price-meta"><small>8 исследований</small></div>
+            </div>
             <ul>
-              <li><button class="price-row" data-book="МРТ плечевого сустава"><span>МРТ плечевого сустава</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ локтевого сустава"><span>МРТ локтевого сустава</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ лучезапястного сустава"><span>МРТ лучезапястного сустава</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ тазобедренного сустава"><span>МРТ тазобедренного сустава</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ коленного сустава"><span>МРТ коленного сустава</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ голеностопного сустава"><span>МРТ голеностопного сустава</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ кисти"><span>МРТ кисти</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ стопы"><span>МРТ стопы</span><span class="arrow" aria-hidden="true">↗</span></button></li>
+              <li><button class="price-row" data-book="МРТ плечевого сустава"><span>МРТ плечевого сустава</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ локтевого сустава"><span>МРТ локтевого сустава</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ лучезапястного сустава"><span>МРТ лучезапястного сустава</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ тазобедренного сустава"><span>МРТ тазобедренного сустава</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ коленного сустава"><span>МРТ коленного сустава</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ голеностопного сустава"><span>МРТ голеностопного сустава</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ кисти"><span>МРТ кисти</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ стопы"><span>МРТ стопы</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
             </ul>
           </div>
-          <div class="price-group">
-            <h3>Мягкие ткани конечностей</h3>
+          <div class="price-group is-mri">
+            <div class="price-group-head">
+              <div><h3>Мягкие ткани конечностей</h3><p>Исследования с контрастом и без.</p></div>
+              <div class="price-meta"><small>4 исследования</small></div>
+            </div>
             <ul>
-              <li><button class="price-row" data-book="МРТ мягких тканей верхних конечностей"><span>МРТ мягких тканей верхних конечностей</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ мягких тканей верхних конечностей с контрастом"><span>МРТ мягких тканей верхних конечностей с контрастом</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ мягких тканей нижних конечностей"><span>МРТ мягких тканей нижних конечностей</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ мягких тканей нижних конечностей с контрастом"><span>МРТ мягких тканей нижних конечностей с контрастом</span><span class="arrow" aria-hidden="true">↗</span></button></li>
+              <li><button class="price-row" data-book="МРТ мягких тканей верхних конечностей"><span>МРТ мягких тканей верхних конечностей</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ мягких тканей верхних конечностей с контрастом"><span>МРТ мягких тканей верхних конечностей с контрастом</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ мягких тканей нижних конечностей"><span>МРТ мягких тканей нижних конечностей</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ мягких тканей нижних конечностей с контрастом"><span>МРТ мягких тканей нижних конечностей с контрастом</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
             </ul>
           </div>
-          <div class="price-group">
-            <h3>Органы и таз</h3>
+          <div class="price-group is-mri">
+            <div class="price-group-head">
+              <div><h3>Органы и таз</h3><p>Брюшная полость, малый таз и желчные пути.</p></div>
+              <div class="price-meta"><small>6 исследований</small></div>
+            </div>
             <ul>
-              <li><button class="price-row" data-book="МРТ брюшной полости и забрюшинного пространства"><span>МРТ брюшной полости и забрюшинного пространства</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ брюшной полости и забрюшинного пространства с контрастом"><span>МРТ брюшной полости и забрюшинного пространства с контрастом</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ органов малого таза"><span>МРТ органов малого таза</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ органов малого таза с контрастом"><span>МРТ органов малого таза с контрастом</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МР-холангиография (желчевыводящие пути)"><span>МР-холангиография (желчевыводящие пути)</span><span class="arrow" aria-hidden="true">↗</span></button></li>
-              <li><button class="price-row" data-book="МРТ илеосакральных сочленений"><span>МРТ илеосакральных сочленений</span><span class="arrow" aria-hidden="true">↗</span></button></li>
+              <li><button class="price-row" data-book="МРТ брюшной полости и забрюшинного пространства"><span>МРТ брюшной полости и забрюшинного пространства</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ брюшной полости и забрюшинного пространства с контрастом"><span>МРТ брюшной полости и забрюшинного пространства с контрастом</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ органов малого таза"><span>МРТ органов малого таза</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ органов малого таза с контрастом"><span>МРТ органов малого таза с контрастом</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МР-холангиография (желчевыводящие пути)"><span>МР-холангиография (желчевыводящие пути)</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
+              <li><button class="price-row" data-book="МРТ илеосакральных сочленений"><span>МРТ илеосакральных сочленений</span><span class="price-go">Записаться <span class="arrow" aria-hidden="true">↗</span></span></button></li>
             </ul>
           </div>
         </div>
       </section>
-
-
     </div>
   </main>
 

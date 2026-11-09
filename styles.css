@@ -443,3 +443,57 @@ button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
 .zozh-empty h2{font-size:clamp(28px,3vw,40px)}
 .zozh-empty .btn{margin-top:12px}
 @media(max-width:1180px){.desktop-nav a{padding:10px 8px;font-size:13.5px}.desktop-nav a:after{left:8px;right:8px}}
+
+/* ================= Цены v2 ================= */
+.consult-banner{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:clamp(40px,5vw,64px);padding:clamp(28px,4vw,48px);border-radius:var(--r-xl);background:var(--lilac-soft)}
+.consult-banner h2{font-size:clamp(28px,3vw,40px)}
+.consult-banner p{margin-top:10px;max-width:52ch}
+.consult-banner-side{display:flex;align-items:center;gap:28px;flex-shrink:0}
+.consult-banner strong{font:400 clamp(44px,4.6vw,64px)/1 Onest,sans-serif;letter-spacing:-.04em;color:var(--teal);white-space:nowrap}
+.price-section{padding-top:clamp(56px,6vw,88px)}
+.price-grid{display:block;columns:2;column-gap:16px}
+.price-grid-3{columns:3}
+.price-group{break-inside:avoid;display:block;width:100%;margin:0 0 16px;padding:0;overflow:hidden}
+.price-group-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:24px 24px 20px;background:var(--lilac-soft)}
+.price-group.is-mri .price-group-head{background:var(--mint-soft)}
+.price-group-head h3{margin:0;font-size:clamp(22px,1.9vw,26px)}
+.price-group-head p{margin-top:6px;font-size:14px;color:var(--muted)}
+.price-meta{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0;text-align:right}
+.price-from{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--paper);font:500 15px/1.2 Onest,sans-serif;color:var(--teal);white-space:nowrap}
+.price-meta small{font-size:12px;color:var(--muted);white-space:nowrap}
+.price-group ul{padding:10px 12px 14px}
+.price-row b{padding:5px 12px;border-radius:999px;background:var(--canvas);font-size:15px;transition:background-color .2s,color .2s}
+.price-row:hover b{background:var(--teal);color:#fff}
+.price-go{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--mint-ink);opacity:.55;transition:opacity .2s}
+.price-row:hover .price-go{opacity:1}
+.price-note{display:none}
+@media(max-width:1100px){.price-grid-3{columns:2}}
+@media(max-width:760px){.price-grid,.price-grid-3{columns:1}.consult-banner{flex-direction:column;align-items:flex-start}.consult-banner-side{width:100%;justify-content:space-between}}
+
+/* ================= Неврологи ================= */
+.neuro-team-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.neuro-card{display:grid;grid-template-columns:2fr 3fr;background:var(--paper);border-radius:var(--r-xl);overflow:hidden}
+.neuro-card-photo{position:relative;min-height:380px;background:var(--lilac-soft)}
+.neuro-card-photo img{position:absolute;inset:0;height:100%;object-fit:cover;object-position:50% 18%}
+.neuro-card-copy{display:flex;flex-direction:column;align-items:flex-start;padding:clamp(24px,2.6vw,36px)}
+.neuro-card-copy h3{font-size:clamp(24px,2.1vw,30px)}
+.neuro-card-copy .doctor-role{margin-top:8px}
+.neuro-card-copy>p:not(.doctor-role){margin-top:12px;font-size:15px}
+.neuro-card .doctor-facts{padding:18px 0 22px}
+.neuro-card .doctor-facts span{background:var(--lilac-soft)}
+.neuro-card .btn{margin-top:auto}
+@media(max-width:1100px){.neuro-team-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.neuro-card{grid-template-columns:1fr}.neuro-card-photo{min-height:340px}}
+
+/* ================= Услуги v2 ================= */
+.catalog-grid{grid-auto-rows:minmax(250px,auto)}
+.catalog-card:not(.has-image) .catalog-card-content{justify-content:flex-end}
+.catalog-card:not(.has-image) h2{padding-top:20px}
+.catalog-card .catalog-actions{margin-top:14px}
+.help-strip{background:var(--lilac-soft)}
+.help-strip p{color:var(--muted)}
+.inline-link{color:var(--teal);text-decoration:underline;text-underline-offset:3px}
+
+/* Мягкие плашки на странице неврологии */
+.preparation,.neuro-close{background:var(--lilac-soft)}
+.preparation p,.neuro-close p{color:var(--muted)}
