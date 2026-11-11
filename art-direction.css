@@ -454,3 +454,8 @@
 .cert-name{font:500 18px/1.3 Onest,sans-serif;letter-spacing:-.01em;margin-top:28px}
 .document-sheet .cert-name+dl{margin-top:12px}
 @media(max-width:650px){.doctor-picker{margin-right:-18px;padding-right:18px}}
+
+/* Третий ряд галереи: четыре кадра */
+.clinic-gallery-four{grid-template-columns:repeat(4,1fr)}
+.clinic-gallery-four .clinic-shot{height:clamp(300px,26vw,400px)}
+@media(max-width:900px){.clinic-gallery-four{grid-template-columns:1fr 1fr}.clinic-gallery-four .clinic-shot:last-child{grid-column:auto}}
