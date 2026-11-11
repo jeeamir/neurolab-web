@@ -128,7 +128,7 @@ function filterServices() {
     const visible = (state.filter === 'all' || card.dataset.category === state.filter) && card.dataset.search.includes(state.search.trim().toLocaleLowerCase('ru'));
     card.hidden = !visible; if (visible) count++;
   });
-  $('#result-count').textContent = `Найдено направлений: ${count}`;
+  $('#result-count').textContent = `${$('#result-count').dataset.label || 'Найдено направлений'}: ${count}`;
   $('#empty-state').hidden = count !== 0;
   $('#reset-filters').hidden = state.filter === 'all' && !state.search;
   $$('[data-filter]').forEach(el => el.setAttribute('aria-pressed', String(el.dataset.filter === state.filter)));

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#3d168f">
   <meta name="robots" content="noindex,nofollow">
   <title>ЗОЖ | Neurolab Plus</title>
-  <meta name="description" content="Здоровый образ жизни: советы врачей Neurolab Plus о здоровье спины, движении и сне.">
+  <meta name="description" content="Статьи врачей Neurolab Plus: здоровье спины, движение, привычки и профилактика.">
   <script>(function(){var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){d.classList.add('js-motion');setTimeout(function(){if(!window.__motionReady)d.classList.remove('js-motion')},3000)}})();</script>
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
@@ -44,6 +44,7 @@
     <a href="../#contacts">Контакты</a>
   </nav>
 
+
   <main id="main">
     <div class="wrap">
       <nav class="breadcrumbs" aria-label="Хлебные крошки">
@@ -51,13 +52,168 @@
       </nav>
       <section class="page-head" aria-labelledby="page-title">
         <h1 id="page-title">ЗОЖ</h1>
-        <p class="lede" data-intro>Советы врачей Neurolab Plus о здоровье спины, движении, сне и восстановлении.</p>
+        <p class="lede" data-intro>Статьи врачей Neurolab Plus о здоровье спины, движении, привычках и профилактике.</p>
       </section>
       <section class="zozh-feed" aria-label="Статьи">
-        <div class="zozh-empty" data-reveal-self>
-          <h2>Первые статьи скоро появятся</h2>
-          <p>А пока можно задать вопрос врачу на консультации.</p>
-          <button class="btn btn-primary" data-book="Первая консультация">Записаться на консультацию</button>
+        <div class="catalog-toolbar">
+          <div class="filters" role="group" aria-label="Фильтр по теме">
+            <button data-filter="all" aria-pressed="true">Все <span>15</span></button>
+            <button data-filter="Спина и суставы" aria-pressed="false">Спина и суставы</button>
+            <button data-filter="Образ жизни" aria-pressed="false">Образ жизни</button>
+            <button data-filter="Привычки" aria-pressed="false">Привычки</button>
+            <button data-filter="Психология" aria-pressed="false">Психология</button>
+            <button data-filter="Профилактика" aria-pressed="false">Профилактика</button>
+          </div>
+          <label class="search-field">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="service-search" type="search" placeholder="Найти статью" aria-label="Поиск статей">
+          </label>
+        </div>
+        <div class="catalog-meta">
+          <span id="result-count" data-label="Найдено статей" aria-live="polite">15 статей</span>
+          <button class="text-link" id="reset-filters" hidden>Сбросить фильтры</button>
+        </div>
+        <div class="zozh-grid" data-reveal="tiles">
+          <a class="zozh-card catalog-card is-lead" href="bol-v-poyasnitse/" data-category="Спина и суставы" data-search="почему болит поясница? причины боли справа и слева, и когда пора к врачу. спина и суставы">
+            <div class="zozh-cover has-photo"><img src="../assets/clinic-lounge.webp" alt="Зона ожидания в клинике Neurolab Plus" loading="lazy" decoding="async" style="object-position:50% 50%"></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Спина и суставы</span>
+              <h2>Почему болит поясница?</h2>
+              <p>Причины боли справа и слева, и когда пора к врачу.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="uprazhneniya-dlya-sustavov/" data-category="Спина и суставы" data-search="профилактика заболеваний суставов поясничного отдела и ног четыре упражнения, которые можно делать дома каждый день. спина и суставы">
+            <div class="zozh-cover has-photo"><img src="../assets/clinic-rehab.webp" alt="Зал реабилитации в клинике Neurolab Plus" loading="lazy" decoding="async" style="object-position:50% 40%"></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Спина и суставы</span>
+              <h2>Профилактика заболеваний суставов поясничного отдела и ног</h2>
+              <p>Четыре упражнения, которые можно делать дома каждый день.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="uprazhneniya-na-press/" data-category="Спина и суставы" data-search="тренируемся дома: качаем пресс зачем нужны мышцы живота и как тренировать их без ошибок. спина и суставы">
+            <div class="zozh-cover tone-lilac"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l1.767-1.768a2 2 0 1 1 2.829 2.829z" transform="translate(-2 -2)"/><path d="m21.5 21.5-1.4-1.4"/><path d="M3.9 3.9 2.5 2.5"/><path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.829-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.767a2 2 0 1 1 2.829 2.829z"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Спина и суставы</span>
+              <h2>Тренируемся дома: качаем пресс</h2>
+              <p>Зачем нужны мышцы живота и как тренировать их без ошибок.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card is-lead" href="pravila-zozh/" data-category="Образ жизни" data-search="советы как вести здоровый образ жизни семь принципов: питание, движение, сон, гигиена и настрой. образ жизни">
+            <div class="zozh-cover tone-lilac"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10Z"/><path d="M2 21c0-3 1.9-5.4 5.1-6C9.5 14.5 12 13 13 12"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Образ жизни</span>
+              <h2>Советы как вести здоровый образ жизни</h2>
+              <p>Семь принципов: питание, движение, сон, гигиена и настрой.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="kak-brosit-kurit/" data-category="Привычки" data-search="5 шагов по отказу от курения план отказа от сигарет: от мотивации до замены привычек. привычки">
+            <div class="zozh-cover tone-violet"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Привычки</span>
+              <h2>5 шагов по отказу от курения</h2>
+              <p>План отказа от сигарет: от мотивации до замены привычек.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="mify-ob-alkogole/" data-category="Привычки" data-search="самые распространённые мифы об алкоголе согревает, снимает стресс, снижает давление — разбираем по пунктам. привычки">
+            <div class="zozh-cover tone-violet"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 15v7"/><path d="M7 3h10l-1.2 6.2a4 4 0 0 1-7.6 0Z"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Привычки</span>
+              <h2>Самые распространённые мифы об алкоголе</h2>
+              <p>Согревает, снимает стресс, снижает давление — разбираем по пунктам.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="kak-uspokoitsya-na-rabote/" data-category="Психология" data-search="как успокоиться, если на работе вам потрепали нервы пять способов прийти в себя, не выходя из офиса. психология">
+            <div class="zozh-cover tone-mint"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M6 2v3M10 2v3M14 2v3"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Психология</span>
+              <h2>Как успокоиться, если на работе вам потрепали нервы</h2>
+              <p>Пять способов прийти в себя, не выходя из офиса.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="vrednye-psihologicheskie-privychki/" data-category="Психология" data-search="семь вредных психологических привычек самообман, страх перемен и другие привычки, которые мешают. психология">
+            <div class="zozh-cover tone-mint"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V18h8v-3.3A7 7 0 0 0 12 2Z"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Психология</span>
+              <h2>Семь вредных психологических привычек</h2>
+              <p>Самообман, страх перемен и другие привычки, которые мешают.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card is-lead" href="zapahi-ot-ustalosti/" data-category="Психология" data-search="запахи, которые помогут избавиться от усталости цитрусы, кофе, мята, хвоя: как ароматы влияют на бодрость. психология">
+            <div class="zozh-cover tone-mint"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8A2.5 2.5 0 1 1 19 12.5H2"/><path d="M9.6 4.4A2 2 0 1 1 11 8H2"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Психология</span>
+              <h2>Запахи, которые помогут избавиться от усталости</h2>
+              <p>Цитрусы, кофе, мята, хвоя: как ароматы влияют на бодрость.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="skrining-posle-40/" data-category="Профилактика" data-search="позаботьтесь о здоровье - пройдите скрининг! что входит в медосмотр для мужчин и женщин с 40 лет. профилактика">
+            <div class="zozh-cover has-photo"><img src="../assets/clinic-usg.webp" alt="Кабинет ультразвуковой диагностики" loading="lazy" decoding="async" style="object-position:50% 45%"></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Профилактика</span>
+              <h2>Позаботьтесь о здоровье - пройдите скрининг</h2>
+              <p>Что входит в медосмотр для мужчин и женщин с 40 лет.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="skrining-posle-50/" data-category="Профилактика" data-search="скрининг – надежная защита от опасных болезней! обследования предстательной железы, желудка и толстой кишки. профилактика">
+            <div class="zozh-cover tone-paper"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Профилактика</span>
+              <h2>Скрининг – надежная защита от опасных болезней</h2>
+              <p>Обследования предстательной железы, желудка и толстой кишки.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="profilaktika-narkomanii/" data-category="Привычки" data-search="профилактика наркомании статистика воз и что помогает уберечь подростков. привычки">
+            <div class="zozh-cover tone-violet"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3 8 3Z"/><path d="m9 12 2 2 4-4"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Привычки</span>
+              <h2>Профилактика наркомании</h2>
+              <p>Статистика ВОЗ и что помогает уберечь подростков.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="zdorovyy-obraz-zhizni/" data-category="Образ жизни" data-search="здоровый образ жизни право на здоровье и роль воз: от алма-атинской декларации до наших дней. образ жизни">
+            <div class="zozh-cover tone-lilac"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Образ жизни</span>
+              <h2>Здоровый образ жизни</h2>
+              <p>Право на здоровье и роль ВОЗ: от Алма-Атинской декларации до наших дней.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="mify-o-kontratseptsii/" data-category="Профилактика" data-search="мифы и правда о контрацепции шесть распространённых заблуждений и что говорят врачи. профилактика">
+            <div class="zozh-cover tone-paper"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.5 12h3l1.5-3 2.5 6 2-4.5 1.5 1.5h4"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Профилактика</span>
+              <h2>Мифы и правда о контрацепции</h2>
+              <p>Шесть распространённых заблуждений и что говорят врачи.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+          <a class="zozh-card catalog-card" href="uhod-za-zhirnoy-kozhey/" data-category="Образ жизни" data-search="уход за жирной кожей лица в домашних условиях как определить тип кожи и выстроить ежедневный уход. образ жизни">
+            <div class="zozh-cover tone-lilac"><span class="zozh-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-5-7-13-7-13S5 10 5 15a7 7 0 0 0 7 7Z"/></svg></span></div>
+            <div class="zozh-card-body">
+              <span class="category-label">Образ жизни</span>
+              <h2>Уход за жирной кожей лица в домашних условиях</h2>
+              <p>Как определить тип кожи и выстроить ежедневный уход.</p>
+              <span class="text-link">Читать <span class="arrow" aria-hidden="true">↗</span></span>
+            </div>
+          </a>
+        </div>
+        <div class="empty-state" id="empty-state" hidden>
+          <h2>Ничего не найдено</h2>
+          <p>Попробуйте другое название или покажите все статьи.</p>
+          <button class="btn btn-primary" data-reset>Показать все статьи</button>
         </div>
       </section>
     </div>
@@ -81,6 +237,13 @@
       <a href="tel:+77085904094">+7 708 590 40 94</a>
     </div>
   </footer>
+
+
+  <dialog class="dialog small-dialog" id="info-dialog" aria-label="Информация">
+    <button class="dialog-close icon-button" aria-label="Закрыть окно"><span aria-hidden="true">×</span></button>
+    <div id="info-content"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
 
 
   <dialog class="dialog small-dialog" id="info-dialog" aria-label="Информация">
