@@ -450,7 +450,6 @@
 .doctor-picker strong{display:block;font-size:14px;font-weight:600;line-height:1.2;white-space:nowrap}
 .doctor-picker small{display:block;font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap}
 .doctor-picker .picker-plain{padding-left:20px}
-#doctor-talgat .profile-photo img{object-position:50% 30%}
 .cert-name{font:500 18px/1.3 Onest,sans-serif;letter-spacing:-.01em;margin-top:28px}
 .document-sheet .cert-name+dl{margin-top:12px}
 @media(max-width:650px){.doctor-picker{margin-right:-18px;padding-right:18px}}
