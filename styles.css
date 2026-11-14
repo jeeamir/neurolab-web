@@ -586,3 +586,13 @@ button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
 .page-jump a.page-jump-download:hover{background:var(--deep)}
 
 @media(min-width:651px){.footer-top .logo{flex-basis:100%;margin-right:0;margin-bottom:12px}.footer-top{gap:8px 28px}}
+
+/* Акции в прайсе */
+.promo-section{padding-top:clamp(48px,5vw,72px)}
+.promo-section .consult-banner{margin-top:0}
+.promo-tag{display:inline-flex;margin-bottom:12px;padding:6px 14px;border-radius:999px;background:var(--teal);color:#fff;font-size:13px;font-weight:600}
+
+/* Логотип (PNG) */
+.logo-img{display:block;height:44px;width:auto}
+.footer .logo-img{height:48px}
+@media(max-width:650px){.logo-img{height:34px}}
