@@ -559,3 +559,30 @@ button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
   .zozh-cta{flex-direction:column;align-items:flex-start;gap:20px}
   .zozh-article p,.zozh-list li{font-size:16px}
 }
+
+/* Шапка: телефон и презентация */
+.header-phone{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 14px;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:var(--ink);transition:background-color .2s}
+.header-phone:hover{background:var(--lilac-soft)}
+.header-phone svg{flex-shrink:0;color:var(--teal)}
+.desktop-nav .nav-download{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.desktop-nav .nav-download svg{flex-shrink:0}
+.desktop-nav a{white-space:nowrap}
+.mobile-nav .mobile-extra{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--teal)}
+.mobile-nav a:not(.mobile-extra)+.mobile-extra{margin-top:8px}
+@media(max-width:1440px){.header-phone{width:46px;padding:0;justify-content:center;border:1px solid var(--line)}.header-phone span{display:none}}
+@media(max-width:1240px){.desktop-nav{display:none}.menu-toggle{display:inline-flex;align-items:center;border:1px solid var(--line)}}
+
+/* Карта 2ГИС */
+.map-block{margin-top:16px;padding:clamp(20px,3vw,32px);border-radius:var(--r-xl);background:var(--paper)}
+.map-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:20px;flex-wrap:wrap}
+.map-head h3{font-size:clamp(24px,2.4vw,32px)}
+.map-head p{margin-top:6px;color:var(--muted)}
+.map-links{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.map-frame{position:relative;height:clamp(340px,42vw,480px);border-radius:var(--r-lg);overflow:hidden;background:var(--sage)}
+.map-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:650px){.map-head{align-items:start;flex-direction:column}.map-links .btn{width:100%;justify-content:center}}
+
+.page-jump a.page-jump-download{gap:8px;background:var(--teal);color:#fff}
+.page-jump a.page-jump-download:hover{background:var(--deep)}
+
+@media(min-width:651px){.footer-top .logo{flex-basis:100%;margin-right:0;margin-bottom:12px}.footer-top{gap:8px 28px}}
